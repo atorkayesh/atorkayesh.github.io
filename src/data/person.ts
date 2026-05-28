@@ -10,7 +10,7 @@ export const person: Person = {
   email2: "atorkayesh@outlook.com",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/torkayesh/",
-    googleScholar: null,
+    googleScholar: "https://scholar.google.com/citations?user=-eICcigAAAAJ&hl=en",
     orcid: null,
   },
   researchInterests: [
