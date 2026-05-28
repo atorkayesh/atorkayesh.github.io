@@ -9,7 +9,7 @@ export const person: Person = {
   email: "torkayesh@sustainability.rwth-aachen.de",
   email2: "atorkayesh@outlook.com",
   socialLinks: {
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/torkayesh/",
     googleScholar: null,
     orcid: null,
   },
