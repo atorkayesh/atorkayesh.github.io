@@ -12,6 +12,9 @@ export interface Publication {
   journal: string;
   year: number;
   doi: string;
+  url?: string;
+  pages?: string;
+  publisher?: string;
   tags: string[];
   type: PublicationType;
   isCorresponding: boolean;

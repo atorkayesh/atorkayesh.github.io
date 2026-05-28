@@ -3,11 +3,15 @@ import type { Publication } from "@/types/publication";
 export const publications: Publication[] = [
   {
     id: "saf-europe-agent-based-simulation-2026",
-    title: "SAF in Europe: an agent-based simulation",
-    authors: ["Ali E. Torkayesh", "Jakob Joachim Rohner", "Sandra Venghaus"],
+    title:
+      "Sustainable aviation fuels in Europe: An agent-based simulation of market dynamics in a regulated competitive landscape",
+    authors: ["Ali Ebadi Torkayesh", "Jakob Joachim Rohner", "Sandra Venghaus"],
     journal: "Transport Policy",
     year: 2026,
-    doi: "",
+    doi: "https://doi.org/10.1016/j.tranpol.2026.104158",
+    url: "https://www.sciencedirect.com/science/article/pii/S0967070X2600168X",
+    pages: "104158",
+    publisher: "Elsevier",
     tags: ["Sustainable Aviation Fuel", "Europe", "Agent-Based Modeling", "Transport Policy"],
     type: "journal-article",
     isCorresponding: true,
