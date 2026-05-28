@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+AGENTS.md
+CLAUDE.md
+ali-portfolio-checklist.md
+ali-portfolio-overview.md
 
 # debug
 npm-debug.log*
