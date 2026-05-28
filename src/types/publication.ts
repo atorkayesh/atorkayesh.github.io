@@ -17,5 +17,4 @@ export interface Publication {
   publisher?: string;
   tags: string[];
   type: PublicationType;
-  isCorresponding: boolean;
 }

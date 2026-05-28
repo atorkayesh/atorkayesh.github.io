@@ -14,7 +14,6 @@ export const publications: Publication[] = [
     publisher: "Elsevier",
     tags: ["Sustainable Aviation Fuel", "Europe", "Agent-Based Modeling", "Transport Policy"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "power-to-x-market-diffusion-cognitive-approach-2025",
@@ -25,7 +24,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Power-to-X", "Market Diffusion", "Cognitive Modeling", "Energy Policy"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "cut-based-matheuristic-electricity-markets-2025",
@@ -36,7 +34,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Electricity Markets", "Matheuristics", "Optimization", "Energy Systems"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "expert-evaluation-fuel-alternatives-germany-2025",
@@ -47,7 +44,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Fuel Alternatives", "Germany", "Expert Evaluation", "Transport Policy"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "type-2-fuzzy-vikor-eco-conscious-freight-2025",
@@ -58,7 +54,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Freight Transport", "Type-2 Fuzzy Sets", "VIKOR", "Sustainability"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "fossil-to-alternative-fuels-strategy-germany-2025",
@@ -69,7 +64,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Alternative Fuels", "Germany", "Strategy", "Sustainable Transport"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "germany-power-to-x-policy-climate-neutral-transport-2024",
@@ -80,7 +74,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Power-to-X", "Policy", "Climate Neutrality", "Transport"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "renewable-fuels-market-development-barriers-2024",
@@ -91,7 +84,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Renewable Fuels", "Market Development", "Barriers", "Operations Research"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "transport-policy-maze-climate-neutrality-2024",
@@ -102,7 +94,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Transport Policy", "Climate Neutrality", "Policy Analysis", "Energy Transitions"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "ml-driven-mcda-ls-svm-2023",
@@ -113,7 +104,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Machine Learning", "MCDA", "LS-SVM", "Decision Analytics"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "resilient-recycling-partner-selection-waste-management-2023",
@@ -124,7 +114,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Waste Management", "Partner Selection", "Resilience", "Soft Computing"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "industry-4-mobility-fuzzy-qfd-bwm-2022",
@@ -135,7 +124,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Industry 4.0", "Mobility", "Fuzzy QFD", "Best-Worst Method"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "interval-valued-neutrosophic-municipal-waste-management-2022",
@@ -146,7 +134,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Municipal Waste Management", "Neutrosophic Sets", "MCDA", "Sustainability"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "healthcare-waste-disinfection-facility-fermatean-fuzzy-2022",
@@ -157,7 +144,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Healthcare Waste", "Facility Location", "Fermatean Fuzzy Sets", "Operations Research"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "air-quality-assessment-europe-2022",
@@ -168,7 +154,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Air Quality", "Europe", "Assessment", "Socio-Economic Planning"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "fuzzy-resiliency-food-supply-chain-spain-2022",
@@ -179,7 +164,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Food Supply Chain", "Resilience", "Fuzzy Methods", "Spain"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "stratified-bwm-waste-disposal-technology-2021",
@@ -190,7 +174,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Waste Disposal", "Technology Selection", "Best-Worst Method", "MCDA"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "trust-battery-swapping-stations-e-scooters-2021",
@@ -201,7 +184,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["E-Scooters", "Battery Swapping", "TRUST", "Sustainable Mobility"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "electric-bus-charging-type-interval-valued-neutrosophic-2021",
@@ -212,7 +194,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Electric Buses", "Charging Infrastructure", "Neutrosophic Sets", "Engineering Management"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "neutrosophic-mcda-critic-cocoso-supply-chain-2021",
@@ -223,7 +204,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Supply Chain", "Neutrosophic MCDA", "CRITIC", "CoCoSo"],
     type: "journal-article",
-    isCorresponding: false,
   },
   {
     id: "social-sustainability-cocoso-2021",
@@ -234,7 +214,6 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Social Sustainability", "CoCoSo", "MCDA", "Sustainable Cities"],
     type: "journal-article",
-    isCorresponding: true,
   },
   {
     id: "landfill-location-bwm-grey-marcos-gis-2021",
@@ -245,6 +224,5 @@ export const publications: Publication[] = [
     doi: "",
     tags: ["Landfill Location", "GIS", "BWM", "Grey MARCOS"],
     type: "journal-article",
-    isCorresponding: true,
   },
 ];
