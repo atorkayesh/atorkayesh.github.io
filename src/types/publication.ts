@@ -14,4 +14,5 @@ export interface Publication {
   doi: string;
   tags: string[];
   type: PublicationType;
+  isCorresponding: boolean;
 }
