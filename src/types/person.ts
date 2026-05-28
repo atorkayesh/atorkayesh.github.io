@@ -3,11 +3,21 @@ export interface Person {
   title: string;
   bio: string;
   email: string;
+  email2?: string;
   affiliations: string[];
+  department: string;
+  location: string;
+  researchInterests: string[];
+  heroStats: {
+    publications: number;
+    grants: number;
+    awards: number;
+    countries: number;
+  };
   socialLinks: {
-    linkedin?: string;
-    googleScholar?: string;
-    orcid?: string;
+    linkedin?: string | null;
+    googleScholar?: string | null;
+    orcid?: string | null;
     github?: string;
     website?: string;
   };
