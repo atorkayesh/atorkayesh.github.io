@@ -6,7 +6,7 @@ type PageWrapperProps = HTMLAttributes<HTMLDivElement>;
 export function PageWrapper({ className, ...props }: PageWrapperProps) {
   return (
     <div
-      className={cn("mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8", className)}
+      className={cn("mx-auto w-full max-w-[min(80rem,100vw)] px-5 sm:px-6 lg:px-8", className)}
       {...props}
     />
   );

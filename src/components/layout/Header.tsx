@@ -58,36 +58,29 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-40 border-b border-transparent bg-background/70 transition-all backdrop-blur-xl",
-        isScrolled && "border-border/70 bg-background/85 shadow-sm",
+        "sticky top-0 z-40 border-b border-border/40 bg-background/90 transition-all duration-200 backdrop-blur-xl",
+        isScrolled && "bg-background/96 shadow-sm",
       )}
     >
-      <PageWrapper className="flex h-[4.5rem] items-center justify-between gap-4 py-3">
+      <PageWrapper className="relative flex h-14 items-center justify-between gap-8">
         <a
-          className="group flex min-w-0 items-center gap-3 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="group min-w-0 shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           href="#main-content"
         >
-          <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-md border border-accent/20 bg-accent/10 font-serif text-sm font-semibold text-accent transition-colors group-hover:bg-accent/15">
-            AT
+          <span className="block font-serif text-[15px] font-medium leading-none tracking-tight text-foreground transition-opacity group-hover:opacity-60">
+            {person.name}
           </span>
-          <span className="min-w-0">
-            <span className="block truncate text-sm font-semibold leading-5 text-foreground">
-              {person.name}
-            </span>
-            <span className="block truncate text-xs leading-4 text-muted">
-              Postdoctoral Researcher
-            </span>
+          <span className="mt-[3px] block text-[10px] font-medium uppercase tracking-[0.14em] text-muted/70">
+            Postdoctoral Researcher
           </span>
         </a>
-        <nav
-          aria-label="Primary"
-          className="hidden items-center rounded-full border border-border/80 bg-background/70 p-1 shadow-sm backdrop-blur md:flex"
-        >
+
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
               className={cn(
-                "relative rounded-full px-3.5 py-2 text-sm font-medium text-muted transition-colors hover:bg-foreground/5 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-                activeSection === link.id && "bg-accent/10 text-foreground",
+                "relative py-1 text-[13px] font-medium tracking-wide text-muted transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent",
+                activeSection === link.id && "text-foreground",
               )}
               href={link.href}
               key={link.id}
@@ -95,32 +88,33 @@ export function Header() {
               {activeSection === link.id ? (
                 <span
                   aria-hidden="true"
-                  className="absolute left-3 top-1/2 size-1.5 -translate-y-1/2 rounded-full bg-accent"
+                  className="absolute left-1/2 -top-1 size-[3px] -translate-x-1/2 rounded-full bg-accent"
                 />
               ) : null}
-              <span className={cn(activeSection === link.id && "pl-2")}>
-                {link.label}
-              </span>
+              {link.label}
             </a>
           ))}
         </nav>
-        <div className="hidden items-center gap-2 md:flex">
-          <DarkModeToggle />
+
+        <div className="hidden items-center gap-5 md:flex">
+          <DarkModeToggle className="border-border/60 bg-transparent shadow-none" />
           <a
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-primary/15 bg-primary px-3.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:border-accent/20 dark:bg-accent dark:text-slate-950 dark:hover:bg-accent/90"
+            className="flex items-center gap-1.5 text-[13px] font-medium text-muted transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
             href="/documents/ali-torkayesh-cv.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <Download aria-hidden="true" className="size-4" />
-            Download CV
+            <Download aria-hidden="true" className="size-3.5 shrink-0" />
+            <span>Download CV</span>
           </a>
         </div>
-        <div className="flex items-center gap-2 md:hidden">
-          <DarkModeToggle />
+
+        <div className="fixed right-5 top-2.5 z-50 flex shrink-0 items-center gap-2 md:hidden">
           <button
             aria-controls="mobile-navigation"
             aria-expanded={isMenuOpen}
             aria-label="Toggle navigation"
-            className="inline-flex size-10 items-center justify-center rounded-md border border-border bg-background/75 text-foreground shadow-sm transition-colors hover:bg-foreground/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="inline-flex size-9 items-center justify-center rounded text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             onClick={() => setIsMenuOpen((open) => !open)}
             type="button"
           >
@@ -128,20 +122,25 @@ export function Header() {
           </button>
         </div>
       </PageWrapper>
+
       <div
         className={cn(
-          "grid overflow-hidden border-t border-border/70 bg-background/90 backdrop-blur-xl transition-[grid-template-rows]",
+          "grid overflow-hidden border-t border-border/30 bg-background/96 backdrop-blur-xl transition-[grid-template-rows]",
           isMenuOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
         )}
         id="mobile-navigation"
       >
         <div className="min-h-0">
-          <PageWrapper className="flex flex-col gap-1 py-3 md:hidden">
+          <PageWrapper className="flex flex-col gap-0.5 py-3 md:hidden">
+            <div className="mb-3 flex items-center justify-between px-2 py-1.5">
+              <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted/60">Appearance</span>
+              <DarkModeToggle className="size-8 border-border/60 bg-transparent shadow-none" />
+            </div>
             {navLinks.map((link) => (
               <a
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-foreground/10 hover:text-foreground",
-                  activeSection === link.id && "bg-accent/10 text-foreground",
+                  "rounded px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-foreground/5 hover:text-foreground",
+                  activeSection === link.id && "text-foreground",
                 )}
                 href={link.href}
                 key={link.id}
@@ -151,11 +150,13 @@ export function Header() {
               </a>
             ))}
             <a
-              className="mt-2 inline-flex h-10 items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-white dark:bg-accent dark:text-slate-950"
+              className="mt-3 flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
               href="/documents/ali-torkayesh-cv.pdf"
               onClick={() => setIsMenuOpen(false)}
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <Download aria-hidden="true" className="size-4" />
+              <Download aria-hidden="true" className="size-3.5" />
               Download CV
             </a>
           </PageWrapper>
