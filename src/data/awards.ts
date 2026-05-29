@@ -19,4 +19,10 @@ export const awards: Award[] = [
     awardedBy: "Hydrogen Futures Conference",
     description: "Poster award at Hydrogen Futures conference in Bonn, Germany.",
   },
+  {
+    title: "Best Presentation Award",
+    year: 2024,
+    awardedBy: "Applied Energy Symposium MITAB",
+    description: "Presentation award at Applied Energy Symposium MITAB in Cambridge, USA.",
+  },
 ];
