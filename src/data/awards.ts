@@ -31,4 +31,34 @@ export const awards: Award[] = [
     awardedBy: "NATCOR",
     description: "Bursary for a PhD course at the University of Southampton.",
   },
+  {
+    title: "ERA Green Hydrogen Fellowship (DAAD)",
+    year: 2023,
+    awardedBy: "DAAD",
+    description: "Research stay at the University of Canterbury.",
+  },
+  {
+    title: "IDEA League Summer School Scholarship",
+    year: 2022,
+    awardedBy: "IDEA League",
+    description: "Summer school scholarship at ETH Zurich.",
+  },
+  {
+    title: "Dean's Summer Scholarship",
+    year: 2020,
+    awardedBy: "FENS, Sabanci University",
+    description: "Dean's summer scholarship at FENS, Sabanci University.",
+  },
+  {
+    title: "Dean's Summer Scholarship",
+    year: 2019,
+    awardedBy: "FENS, Sabanci University",
+    description: "Dean's summer scholarship at FENS, Sabanci University.",
+  },
+  {
+    title: "Dean's Scholarship for Master's Studies",
+    year: 2018,
+    awardedBy: "FENS, Sabanci University",
+    description: "Dean's scholarship for master's studies at FENS, Sabanci University.",
+  },
 ];
