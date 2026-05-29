@@ -25,4 +25,10 @@ export const awards: Award[] = [
     awardedBy: "Applied Energy Symposium MITAB",
     description: "Presentation award at Applied Energy Symposium MITAB in Cambridge, USA.",
   },
+  {
+    title: "NATCOR Bursary (AEORS)",
+    year: 2024,
+    awardedBy: "NATCOR",
+    description: "Bursary for a PhD course at the University of Southampton.",
+  },
 ];
