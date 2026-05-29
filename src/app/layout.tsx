@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { inter, playfairDisplay } from "@/lib/fonts";
 import "./globals.css";
 
@@ -16,8 +17,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${playfairDisplay.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
