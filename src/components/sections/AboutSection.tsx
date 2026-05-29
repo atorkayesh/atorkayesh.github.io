@@ -11,7 +11,7 @@ const initials = person.name
 
 export function AboutSection() {
   return (
-    <section className="scroll-mt-24" id="research">
+    <section className="scroll-mt-24" id="about">
       <div className="grid gap-10 md:grid-cols-[1fr_16rem] md:items-start">
         <div className="order-2 md:order-1">
           <SectionHeading subtitle="Research profile">About</SectionHeading>
