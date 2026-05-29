@@ -13,4 +13,10 @@ export const awards: Award[] = [
     awardedBy: "IDEA League",
     description: "Research stay at TU Delft.",
   },
+  {
+    title: "Second Best Poster",
+    year: 2025,
+    awardedBy: "Hydrogen Futures Conference",
+    description: "Poster award at Hydrogen Futures conference in Bonn, Germany.",
+  },
 ];
