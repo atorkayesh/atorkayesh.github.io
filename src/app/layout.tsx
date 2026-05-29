@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import { RootLayout as SiteRootLayout } from "@/components/layout/RootLayout";
+import { ThemeScript } from "@/components/layout/ThemeScript";
 import { inter, playfairDisplay } from "@/lib/fonts";
 import "./globals.css";
 
@@ -19,8 +20,11 @@ export default function RootLayout({
       className={`${inter.variable} ${playfairDisplay.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <ThemeScript />
+      </head>
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>{children}</ThemeProvider>
+        <SiteRootLayout>{children}</SiteRootLayout>
       </body>
     </html>
   );
