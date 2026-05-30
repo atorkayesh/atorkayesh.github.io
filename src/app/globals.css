@@ -11,7 +11,7 @@
   --background: var(--color-surface);
   --foreground: var(--color-foreground);
 
-  --grid-dot: rgba(26, 24, 22, 0.18);
+  --grid-dot: rgba(26, 24, 22, 0.15);
 }
 
 @theme inline {

@@ -73,11 +73,6 @@ export function Sidebar() {
         </p>
         <p className="mt-1 text-sm text-muted">{person.location}</p>
 
-        <p className="mt-6 max-w-[280px] text-sm leading-relaxed text-muted">
-          I study how renewable fuels, hydrogen, and Power-to-X technologies move
-          through markets, policies, and transport systems.
-        </p>
-
         {/* Nav */}
         <nav aria-label="Primary" className="mt-14 flex flex-col">
           {navLinks.map((link) => {
