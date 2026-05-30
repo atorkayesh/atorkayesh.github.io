@@ -58,6 +58,7 @@ const pathSectionMap: Record<string, string> = {
   "/publications": "publications",
   "/awards": "awards",
   "/conferences": "conferences",
+  "/supervision": "supervision",
   "/contact": "contact",
   "/research": "research",
 };

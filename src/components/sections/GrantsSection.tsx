@@ -13,7 +13,7 @@ const sortedGrants = [...grants].sort((a, b) => b.yearStart - a.yearStart);
 export function GrantsSection() {
   return (
     <section className="scroll-mt-24" id="grants">
-      <SectionHeading subtitle="Funded research projects and collaborative programs.">
+      <SectionHeading subtitle="Association in Research Grants">
         Grants
       </SectionHeading>
       <div className="mt-8">

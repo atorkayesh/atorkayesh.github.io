@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { supervision } from "@/data/supervision";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { SupervisionLevel } from "@/types/supervision";
@@ -9,15 +10,25 @@ const levelGroups: Array<{ label: string; value: SupervisionLevel }> = [
   { label: "Internships", value: "intern" },
 ];
 
+const previewSupervision = supervision.slice(0, 5);
+
 export function SupervisionSection() {
   return (
     <section className="scroll-mt-24" id="supervision">
-      <SectionHeading subtitle="Supervised doctoral, master's, bachelor's, and internship work.">
-        Student Supervision
-      </SectionHeading>
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <SectionHeading subtitle="Supervised doctoral, master's, bachelor's, and internship work.">
+          Student Supervision
+        </SectionHeading>
+        <Link
+          className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          href="/supervision"
+        >
+          View All Student Supervision <span aria-hidden="true">→</span>
+        </Link>
+      </div>
       <div className="mt-8 space-y-10">
         {levelGroups.map((group) => {
-          const items = supervision.filter((item) => item.level === group.value);
+          const items = previewSupervision.filter((item) => item.level === group.value);
 
           if (items.length === 0) {
             return null;
