@@ -11,11 +11,17 @@ const initials = person.name
 
 export function AboutSection() {
   return (
-    <section className="flex min-h-[100svh] flex-col justify-center scroll-mt-8" id="about">
+    <section
+      className="flex min-h-[100svh] flex-col justify-center scroll-mt-8"
+      id="about"
+    >
       <div className="flex gap-8">
         <div className="min-w-0 flex-1">
           <p className="text-sm leading-7 text-muted">{person.bio}</p>
-          <div className="mt-6 flex flex-wrap gap-2" aria-label="Research interests">
+          <div
+            className="mt-6 flex flex-wrap gap-2"
+            aria-label="Research interests"
+          >
             {person.researchInterests.map((interest) => (
               <Tag key={interest}>{interest}</Tag>
             ))}
@@ -25,10 +31,10 @@ export function AboutSection() {
           {/* Replace src with "/photo.jpg" when available */}
           <Avatar
             alt={person.name}
-            className="rounded-xl text-2xl font-semibold shadow-md ring-1 ring-border/30"
+            className="rounded-[0.6rem] text-2xl font-semibold"
             initials={initials}
-            width={140}
-            height={180}
+            width={150}
+            height={200}
             src={person.avatar}
           />
         </div>
