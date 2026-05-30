@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
 import { Avatar } from "@/components/ui/Avatar";
-import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -113,7 +112,7 @@ export function Sidebar() {
         </nav>
       </div>
 
-      {/* Bottom: social icons + download cv + theme toggle */}
+      {/* Bottom: social icons + download cv */}
       <div className="mt-10">
         <div className="flex flex-wrap items-center gap-4">
           {socialLinks.map((link) => {
@@ -140,9 +139,6 @@ export function Sidebar() {
           >
             <Download aria-hidden="true" className="size-[18px]" />
           </a>
-          <div className="ml-auto">
-            <DarkModeToggle />
-          </div>
         </div>
         <p className="mt-6 text-[11px] text-muted/40">
           © 2026 {person.name}

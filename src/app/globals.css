@@ -11,7 +11,7 @@
   --background: var(--color-surface);
   --foreground: var(--color-foreground);
 
-  --grid-dot: rgba(26, 24, 22, 0.055);
+  --grid-dot: rgba(26, 24, 22, 0.18);
 }
 
 @theme inline {
@@ -24,45 +24,6 @@
   --color-border: var(--color-border);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair-display);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #c8d8eb;
-    --color-accent: #7aacd6;
-    --color-surface: #111110;
-    --color-muted: #a8a29e;
-    --color-border: #2a2924;
-    --color-foreground: #f2f0ea;
-
-    --grid-dot: rgba(242, 240, 234, 0.04);
-  }
-}
-
-.dark {
-  --color-primary: #c8d8eb;
-  --color-accent: #7aacd6;
-  --color-surface: #111110;
-  --color-muted: #a8a29e;
-  --color-border: #2a2924;
-  --color-foreground: #f2f0ea;
-  --background: var(--color-surface);
-  --foreground: var(--color-foreground);
-
-  --grid-dot: rgba(242, 240, 234, 0.04);
-}
-
-.light {
-  --color-primary: #1e3a5f;
-  --color-accent: #2c4b7e;
-  --color-surface: #f6f5f1;
-  --color-muted: #78716c;
-  --color-border: #e4e2da;
-  --color-foreground: #1a1816;
-  --background: var(--color-surface);
-  --foreground: var(--color-foreground);
-
-  --grid-dot: rgba(26, 24, 22, 0.055);
 }
 
 body {
