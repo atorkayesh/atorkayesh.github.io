@@ -3,11 +3,12 @@
 import { useMemo, useState } from "react";
 import type { Supervised, SupervisionLevel } from "@/types/supervision";
 import { cn } from "@/lib/utils";
+import { Badge } from "./Badge";
 
 const levels: Array<{ label: string; value: SupervisionLevel }> = [
-  { label: "PhD", value: "phd" },
-  { label: "Masters", value: "masters" },
-  { label: "Bachelors", value: "bachelors" },
+  { label: "PhDs", value: "phd" },
+  { label: "Master's", value: "masters" },
+  { label: "Bachelor's", value: "bachelors" },
   { label: "Interns", value: "intern" },
 ];
 
@@ -15,6 +16,10 @@ type SupervisionTableProps = {
   className?: string;
   items: Supervised[];
 };
+
+function hasDaadFunding(item: Supervised) {
+  return item.level === "intern" && item.note?.toLowerCase().includes("daad");
+}
 
 export function SupervisionTable({ className, items }: SupervisionTableProps) {
   const [activeLevel, setActiveLevel] = useState<SupervisionLevel>("phd");
@@ -57,7 +62,12 @@ export function SupervisionTable({ className, items }: SupervisionTableProps) {
           <tbody className="divide-y divide-border">
             {visibleItems.map((item) => (
               <tr key={`${item.level}-${item.name}-${item.year}`}>
-                <td className="px-4 py-3 font-medium text-foreground">{item.name}</td>
+                <td className="px-4 py-3 font-medium text-foreground">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span>{item.name}</span>
+                    {hasDaadFunding(item) ? <Badge variant="funder">DAAD</Badge> : null}
+                  </div>
+                </td>
                 <td className="px-4 py-3 text-muted">{item.year}</td>
                 <td className="px-4 py-3 text-muted">{item.topic}</td>
                 <td className="px-4 py-3 text-muted">{item.institution}</td>
