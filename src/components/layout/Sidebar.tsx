@@ -86,6 +86,19 @@ export function Sidebar() {
         .filter((el): el is HTMLElement => el !== null)
         .sort((a, b) => a.offsetTop - b.offsetTop);
 
+      const atBottom =
+        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50;
+
+      if (atBottom) {
+        const lastVisible = [...sections]
+          .reverse()
+          .find((el) => el.getBoundingClientRect().top < window.innerHeight);
+        if (lastVisible) {
+          setActiveSection(lastVisible.id);
+          return;
+        }
+      }
+
       let current = sections[0]?.id ?? "about";
       for (const el of sections) {
         if (el.getBoundingClientRect().top <= trigger) {

@@ -33,8 +33,8 @@ export function AboutSection() {
             alt={person.name}
             className="rounded-[0.6rem] text-2xl font-semibold"
             initials={initials}
-            width={150}
-            height={200}
+            width={170}
+            height={230}
             src={person.avatar}
           />
         </div>
