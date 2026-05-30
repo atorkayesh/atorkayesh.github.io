@@ -1,5 +1,4 @@
 import { industry } from "@/data/industry";
-import { Badge } from "@/components/ui/Badge";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const [industryExperience] = industry;
@@ -26,23 +25,38 @@ export function IndustrySection() {
       <SectionHeading subtitle="Professional software implementation experience.">
         Industry
       </SectionHeading>
-      <article className="mt-8 rounded-lg border border-border bg-background p-5">
-        <div className="flex flex-wrap items-center gap-2">
-          <Badge variant="tag">{industryExperience.title}</Badge>
-          <Badge variant="year">
-            {industryExperience.yearStart}-{industryExperience.yearEnd}
-          </Badge>
-        </div>
-        <h3 className="mt-4 text-lg font-semibold leading-7 text-foreground">
-          {industryExperience.institution}
-        </h3>
-        <p className="mt-1 text-sm leading-6 text-muted">{industryExperience.location}</p>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-foreground">
-          {responsibilities.map((responsibility) => (
-            <li key={responsibility}>{responsibility}</li>
-          ))}
-        </ul>
-      </article>
+      <div className="mt-8">
+        <article className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]">
+          <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
+            {industryExperience.yearStart}&ndash;{industryExperience.yearEnd}
+          </div>
+          <div className="min-w-0">
+            <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
+              {industryExperience.title}
+            </h3>
+            <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
+              <span className="font-medium text-foreground/80">
+                {industryExperience.institution}
+              </span>
+              {" "}&middot; {industryExperience.location}
+            </p>
+            <ul className="mt-3 space-y-1.5">
+              {responsibilities.map((responsibility) => (
+                <li
+                  className="flex gap-2.5 text-[0.8125rem] leading-6 text-foreground/90"
+                  key={responsibility}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="mt-2.5 size-1 shrink-0 rounded-full bg-muted/50"
+                  />
+                  <span>{responsibility}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
   );
 }

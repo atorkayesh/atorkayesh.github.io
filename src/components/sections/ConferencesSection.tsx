@@ -23,20 +23,20 @@ export function ConferencesSection() {
       <SectionHeading subtitle="Conference talks, posters, and proceedings.">
         Conferences
       </SectionHeading>
-      <div className="mt-8 space-y-10">
+      <div className="mt-8">
         {conferenceGroups.map(([year, yearConferences]) => (
           <section
             aria-labelledby={`conferences-${year}`}
-            className="grid gap-5 sm:grid-cols-[4rem_1fr]"
+            className="grid gap-x-5 gap-y-4 border-b border-border/40 py-6 first:pt-0 last:border-0 sm:grid-cols-[6rem_1fr]"
             key={year}
           >
             <h3
-              className="font-serif text-2xl font-semibold leading-8 text-foreground"
+              className="font-mono text-xs leading-6 tabular-nums text-muted/80 sm:pt-0.5"
               id={`conferences-${year}`}
             >
               {year}
             </h3>
-            <div className="space-y-6">
+            <div className="space-y-5">
               {yearConferences.map((conference, index) => (
                 <ConferenceEntry
                   conference={conference}

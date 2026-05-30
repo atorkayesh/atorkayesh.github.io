@@ -1,7 +1,5 @@
 import { education } from "@/data/education";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Timeline } from "@/components/ui/Timeline";
-import { TimelineItem } from "@/components/ui/TimelineItem";
 
 export function EducationSection() {
   return (
@@ -9,33 +7,32 @@ export function EducationSection() {
       <SectionHeading subtitle="Academic degrees and thesis work.">
         Education
       </SectionHeading>
-      <Timeline className="mt-8">
-        {education.map((item, index) => {
-          const yearRange = `${item.yearStart}-${item.yearEnd}`;
-
-          return (
-            <TimelineItem
-              isLast={index === education.length - 1}
-              key={`${item.degree}-${item.institution}`}
-              year={yearRange}
-            >
-              <article>
-                <h3 className="text-lg font-semibold leading-7 text-foreground">
-                  {item.degree} in {item.field}
-                </h3>
-                <p className="mt-1 text-sm leading-6 text-muted">
-                  {item.institution} · {item.location}
+      <div className="mt-8">
+        {education.map((item) => (
+          <article
+            className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]"
+            key={`${item.degree}-${item.institution}`}
+          >
+            <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
+              {item.yearStart}&ndash;{item.yearEnd}
+            </div>
+            <div className="min-w-0">
+              <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
+                {item.degree} in {item.field}
+              </h3>
+              <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
+                <span className="font-medium text-foreground/80">{item.institution}</span>
+                {" "}&middot; {item.location}
+              </p>
+              {item.thesis ? (
+                <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
+                  <span className="font-medium text-foreground/80">Thesis:</span> {item.thesis}
                 </p>
-                {item.thesis ? (
-                  <p className="mt-3 text-sm leading-6 text-foreground">
-                    <span className="font-medium">Thesis:</span> {item.thesis}
-                  </p>
-                ) : null}
-              </article>
-            </TimelineItem>
-          );
-        })}
-      </Timeline>
+              ) : null}
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
