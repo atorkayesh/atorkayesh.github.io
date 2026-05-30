@@ -23,7 +23,7 @@ export function IndustrySection() {
   return (
     <section className="scroll-mt-24" id="industry">
       <SectionHeading>
-        Industry
+        Industry Experiences
       </SectionHeading>
       <div className="mt-8">
         <article className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]">

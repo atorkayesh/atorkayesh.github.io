@@ -36,7 +36,7 @@ const navGroups = [
       { href: "/#positions", id: "positions", label: "Positions" },
       { href: "/#experiences", id: "experiences", label: "Experiences" },
       { href: "/#software", id: "software", label: "Software" },
-      { href: "/#industry", id: "industry", label: "Industry" },
+      { href: "/#industry", id: "industry", label: "Industry Experiences" },
       { href: "/#skills", id: "skills", label: "Skills" },
       { href: "/#contact", id: "contact", label: "Contact" },
     ],

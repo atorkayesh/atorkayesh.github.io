@@ -5,8 +5,15 @@ export const industry: AcademicExperience[] = [
     title: "Implementation Consultant",
     institution: "ICRON Technologies",
     location: "Istanbul, Türkiye",
-    period: "2020–2021",
+    period: "September 2020 – August 2021",
     yearStart: 2020,
-    details: "Supply chain software implementation, MS SQL Server, demand forecasting, and scheduling.",
+    responsibilities: [
+      "Supply chain software development projects and proof-of-concepts",
+      "Data management and integration using MS SQL Server",
+      "Mathematical modeling for logistics and resource allocation optimization",
+      "Demand planning using time-series analysis and deep learning techniques",
+      "Capacity planning to balance supply and demand",
+      "Production and operational scheduling to improve efficiency and productivity",
+    ],
   },
 ];

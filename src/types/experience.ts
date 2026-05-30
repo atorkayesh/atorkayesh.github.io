@@ -7,4 +7,5 @@ export interface AcademicExperience {
   period: string;
   yearStart: number;
   details?: string;
+  responsibilities?: string[];
 }
