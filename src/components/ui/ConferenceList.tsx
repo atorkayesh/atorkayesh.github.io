@@ -37,7 +37,7 @@ export function ConferenceList({ className, conferences }: ConferenceListProps) 
           >
             {year}
           </h3>
-          <div className="space-y-5">
+          <div className="divide-y divide-border/50">
             {yearConferences.map((conference, index) => (
               <ConferenceEntry
                 conference={conference}

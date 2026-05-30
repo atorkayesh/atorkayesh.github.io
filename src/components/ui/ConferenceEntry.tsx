@@ -18,7 +18,7 @@ export function ConferenceEntry({ conference }: ConferenceEntryProps) {
   const hasLocation = conference.location && conference.location !== "TBD";
 
   return (
-    <article>
+    <article className="py-4 first:pt-0 last:pb-0">
       <p className="text-[0.8125rem] leading-6 text-muted">
         {conference.authors.map((author, authorIndex) => (
           <span key={`${conference.title}-${author}`}>
@@ -26,7 +26,7 @@ export function ConferenceEntry({ conference }: ConferenceEntryProps) {
             {isHighlightedAuthor(author) ? (
               <strong className="font-semibold text-foreground">{author}</strong>
             ) : (
-              author
+              <span className="font-normal text-muted">{author}</span>
             )}
           </span>
         ))}

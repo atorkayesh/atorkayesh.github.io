@@ -2,19 +2,19 @@ import type { ConferencePresentation } from "@/types/conference";
 
 export const conferences: ConferencePresentation[] = [
   {
-    authors: ["Ali E. Torkayesh"],
-    title: "2026 Conference Presentation Placeholder 1",
-    conference: "TBD",
-    location: "TBD",
-    date: "2026",
+    authors: ["Torkayesh, A.E.", "Ghorbani, A.", "Venghaus, S."],
+    title: "Sustainable aviation fuels in the European Union: Addressing institutional misalignment across multi-level governance",
+    conference: "World Interdisciplinary Network for Institutional Research (WINIR)",
+    location: "Rome, Italy",
+    date: "July 2026",
     type: "oral",
   },
   {
-    authors: ["Ali E. Torkayesh"],
-    title: "2026 Conference Presentation Placeholder 2",
-    conference: "TBD",
-    location: "TBD",
-    date: "2026",
+    authors: ["Gimpel, R.", "Torkayesh, A.E.", "Offermann, J.", "Engelmann, L.", "Venghaus, S.", "Ziefle, M.", "Arning, K."],
+    title: "Driving towards a sustainable Europe? Interdisciplinary perspectives on perceptions and acceptance of EU mobility policies",
+    conference: "14th International Conference \"Fuel Science: From Production to Propulsion\"",
+    location: "Aachen, Germany",
+    date: "June 2026",
     type: "oral",
   },
   {
