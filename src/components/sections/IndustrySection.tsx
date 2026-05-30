@@ -22,7 +22,7 @@ export function IndustrySection() {
 
   return (
     <section className="scroll-mt-24" id="industry">
-      <SectionHeading subtitle="Professional software implementation experience.">
+      <SectionHeading>
         Industry
       </SectionHeading>
       <div className="mt-8">

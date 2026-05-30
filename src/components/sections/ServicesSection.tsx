@@ -12,7 +12,7 @@ export function ServicesSection() {
 
   return (
     <section className="scroll-mt-24" id="services">
-      <SectionHeading subtitle="Editorial service and peer review activity.">
+      <SectionHeading>
         Academic Service
       </SectionHeading>
       <div className="mt-8">

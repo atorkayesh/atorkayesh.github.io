@@ -25,7 +25,7 @@ const levelGroups: Array<{ label: string; value: SupervisionLevel }> = [
 export default function SupervisionPage() {
   return (
     <PageWrapper className="px-0 sm:px-0 lg:px-0">
-      <SectionHeading subtitle="Supervised doctoral, master's, bachelor's, and internship work.">
+      <SectionHeading>
         Student Supervision
       </SectionHeading>
       <div className="mt-10 space-y-10">

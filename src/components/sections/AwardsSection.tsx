@@ -9,7 +9,7 @@ export function AwardsSection() {
   return (
     <section className="scroll-mt-24" id="awards">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <SectionHeading subtitle="Fellowships, grants, and presentation awards.">
+        <SectionHeading>
           Honors &amp; Awards
         </SectionHeading>
         <Link

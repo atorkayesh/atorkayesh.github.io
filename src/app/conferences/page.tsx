@@ -18,7 +18,7 @@ export function generateMetadata(): Metadata {
 export default function ConferencesPage() {
   return (
     <PageWrapper className="px-0 sm:px-0 lg:px-0">
-      <SectionHeading subtitle="Conference talks, posters, and proceedings.">
+      <SectionHeading subtitle="Conference Presentations, Posters &amp; Proceedings">
         Conferences
       </SectionHeading>
       <ConferenceList className="mt-10" conferences={conferences} />

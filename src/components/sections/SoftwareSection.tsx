@@ -5,7 +5,7 @@ import { SoftwareEntry } from "@/components/ui/SoftwareEntry";
 export function SoftwareSection() {
   return (
     <section className="scroll-mt-24" id="software">
-      <SectionHeading subtitle="Research tools and analysis packages.">
+      <SectionHeading>
         Software
       </SectionHeading>
       <div className="mt-8">

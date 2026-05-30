@@ -16,7 +16,7 @@ export function SupervisionSection() {
   return (
     <section className="scroll-mt-24" id="supervision">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <SectionHeading subtitle="Supervised doctoral, master's, bachelor's, and internship work.">
+        <SectionHeading>
           Student Supervision
         </SectionHeading>
         <Link

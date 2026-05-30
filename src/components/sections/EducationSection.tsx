@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export function EducationSection() {
   return (
     <section className="scroll-mt-24" id="education">
-      <SectionHeading subtitle="Academic degrees and thesis work.">
+      <SectionHeading>
         Education
       </SectionHeading>
       <div className="mt-8">

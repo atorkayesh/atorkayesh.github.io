@@ -11,7 +11,7 @@ export function ConferencesSection() {
   return (
     <section className="scroll-mt-24" id="conferences">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <SectionHeading subtitle="Conference talks, posters, and proceedings.">
+        <SectionHeading subtitle="Conference Presentations, Posters &amp; Proceedings">
           Conferences
         </SectionHeading>
         <Link
