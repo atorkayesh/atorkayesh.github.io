@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { person } from "@/data/person";
 import { cn } from "@/lib/utils";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
@@ -64,14 +64,25 @@ export function Header() {
     >
       <PageWrapper className="relative flex h-14 items-center justify-between gap-8">
         <a
-          className="group min-w-0 shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="group flex min-w-0 shrink-0 items-center gap-3 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           href="#main-content"
         >
-          <span className="block font-serif text-[15px] font-medium leading-none tracking-tight text-foreground transition-opacity group-hover:opacity-60">
-            {person.name}
+          <span
+            aria-hidden="true"
+            className="hidden size-9 shrink-0 items-center justify-center rounded-md border border-border/60 bg-foreground font-serif text-[13px] font-semibold leading-none text-background shadow-sm transition-all group-hover:-translate-y-0.5 group-hover:shadow-md sm:inline-flex"
+          >
+            AT
           </span>
-          <span className="mt-[3px] block text-[10px] font-medium uppercase tracking-[0.14em] text-muted/70">
-            Postdoctoral Researcher
+          <span className="min-w-0">
+            <span className="block truncate font-serif text-[15px] font-semibold leading-tight tracking-normal text-foreground transition-colors group-hover:text-accent">
+              {person.name}
+            </span>
+            <span className="mt-[3px] flex items-center gap-1.5">
+              <span aria-hidden="true" className="inline-block h-px w-3 shrink-0 bg-accent/60" />
+              <span className="truncate text-[9.5px] font-semibold uppercase tracking-[0.18em] text-muted/60">
+                Postdoctoral Researcher
+              </span>
+            </span>
           </span>
         </a>
 
@@ -96,17 +107,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 md:flex">
-          <DarkModeToggle className="border-border/60 bg-transparent shadow-none" />
-          <a
-            className="flex items-center gap-1.5 text-[13px] font-medium text-muted transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-            href="/documents/ali-torkayesh-cv.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Download aria-hidden="true" className="size-3.5 shrink-0" />
-            <span>Download CV</span>
-          </a>
+        <div className="hidden items-center md:flex">
+          <DarkModeToggle />
         </div>
 
         <div className="fixed right-5 top-2.5 z-50 flex shrink-0 items-center gap-2 md:hidden">
@@ -134,7 +136,7 @@ export function Header() {
           <PageWrapper className="flex flex-col gap-0.5 py-3 md:hidden">
             <div className="mb-3 flex items-center justify-between px-2 py-1.5">
               <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted/60">Appearance</span>
-              <DarkModeToggle className="size-8 border-border/60 bg-transparent shadow-none" />
+              <DarkModeToggle />
             </div>
             {navLinks.map((link) => (
               <a
@@ -149,16 +151,6 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <a
-              className="mt-3 flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
-              href="/documents/ali-torkayesh-cv.pdf"
-              onClick={() => setIsMenuOpen(false)}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Download aria-hidden="true" className="size-3.5" />
-              Download CV
-            </a>
           </PageWrapper>
         </div>
       </div>
