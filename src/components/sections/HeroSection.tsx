@@ -3,15 +3,7 @@
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
 import { Button } from "@/components/ui/Button";
-import { CountUpStatCard } from "@/components/ui/CountUpStatCard";
 import { PageWrapper } from "@/components/layout/PageWrapper";
-
-const stats = [
-  { label: "Publications", value: person.heroStats.publications },
-  { label: "Grants", value: person.heroStats.grants },
-  { label: "Awards", value: person.heroStats.awards },
-  { label: "Countries", value: person.heroStats.countries },
-];
 
 const socialLinks = [
   {
@@ -96,11 +88,6 @@ export function HeroSection() {
           </div>
         </div>
         <aside className="max-w-[calc(100vw-2.5rem)] space-y-4 lg:max-w-none">
-          <div className="grid grid-cols-2 gap-5 rounded-lg border border-border/60 bg-background/70 p-5 shadow-sm backdrop-blur">
-            {stats.map((stat) => (
-              <CountUpStatCard key={stat.label} label={stat.label} value={stat.value} />
-            ))}
-          </div>
           <div
             aria-label="Affiliations"
             className="flex items-stretch divide-x divide-border/50 overflow-hidden rounded-lg border border-border/50 bg-background/70 backdrop-blur"
