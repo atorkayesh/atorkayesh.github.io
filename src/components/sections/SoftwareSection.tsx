@@ -1,6 +1,6 @@
 import { software } from "@/data/software";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SoftwareCard } from "@/components/ui/SoftwareCard";
+import { SoftwareEntry } from "@/components/ui/SoftwareEntry";
 
 export function SoftwareSection() {
   return (
@@ -8,9 +8,9 @@ export function SoftwareSection() {
       <SectionHeading subtitle="Research tools and analysis packages.">
         Software
       </SectionHeading>
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <div className="mt-8">
         {software.map((item) => (
-          <SoftwareCard key={item.name} software={item} />
+          <SoftwareEntry key={item.name} software={item} />
         ))}
       </div>
     </section>
