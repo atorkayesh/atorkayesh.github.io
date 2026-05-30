@@ -93,8 +93,10 @@ export function Sidebar() {
     <aside className="flex flex-col justify-between py-16 lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:max-w-sm lg:py-24 lg:pr-12">
       <div>
         {/* Identity */}
-        <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] text-foreground lg:text-4xl">
-          {person.name}
+        <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] lg:text-4xl">
+          <a href="/" className="text-foreground transition-colors hover:text-accent">
+            {person.name}
+          </a>
         </h1>
         <p className="mt-3 text-[0.85rem] font-semibold text-accent">
           {person.title}
