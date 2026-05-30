@@ -166,13 +166,13 @@ export function Sidebar() {
             href={person.cvPath}
             rel="noopener noreferrer"
             target="_blank"
-            className="mb-4 inline-flex items-center gap-1.5 rounded border border-border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-muted transition-colors hover:border-foreground hover:text-foreground"
+            className="mb-5 inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white shadow-sm transition-all hover:bg-accent/85 hover:shadow-md active:scale-[0.98]"
           >
-            <Download aria-hidden="true" className="size-[11px]" />
+            <Download aria-hidden="true" className="size-3" />
             Download CV
           </a>
         )}
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center gap-5">
           {socialLinks.map((link) => {
             const Icon = link.icon;
             return (

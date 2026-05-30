@@ -13,7 +13,7 @@ export function Avatar({ alt = "", className, initials, size = 64, src }: Avatar
   return (
     <span
       className={cn(
-        "relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-border bg-foreground/10 font-medium text-foreground",
+        "relative inline-flex shrink-0 items-center justify-center overflow-hidden border border-border bg-foreground/10 font-medium text-foreground",
         className,
       )}
       style={{ height: size, width: size }}

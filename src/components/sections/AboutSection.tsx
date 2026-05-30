@@ -25,9 +25,9 @@ export function AboutSection() {
           {/* Replace src with "/photo.jpg" when available */}
           <Avatar
             alt={person.name}
-            className="text-2xl font-semibold ring-4 ring-border/20 shadow-sm"
+            className="rounded-xl text-2xl font-semibold shadow-md ring-1 ring-border/30"
             initials={initials}
-            size={120}
+            size={130}
             src={person.avatar}
           />
         </div>
