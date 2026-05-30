@@ -8,9 +8,7 @@ import { cn } from "@/lib/utils";
 const navGroups = [
   {
     label: "Profile",
-    links: [
-      { href: "#about", id: "about", label: "About" },
-    ],
+    links: [{ href: "#about", id: "about", label: "About" }],
   },
   {
     label: "Research",
@@ -46,7 +44,11 @@ const navGroups = [
 
 const socialLinks = [
   { href: person.socialLinks.linkedin, icon: Link, label: "LinkedIn" },
-  { href: person.socialLinks.googleScholar, icon: GraduationCap, label: "Google Scholar" },
+  {
+    href: person.socialLinks.googleScholar,
+    icon: GraduationCap,
+    label: "Google Scholar",
+  },
   { href: person.socialLinks.orcid, icon: BadgeCheck, label: "ORCID" },
   { href: `mailto:${person.email}`, icon: Mail, label: "Email" },
 ].filter((link): link is typeof link & { href: string } => Boolean(link.href));
@@ -83,9 +85,9 @@ export function Sidebar() {
     return () => window.removeEventListener("scroll", update);
   }, []);
 
-  const activeGroup = navGroups.find((g) =>
-    g.links.some((l) => l.id === activeSection),
-  )?.label ?? "Profile";
+  const activeGroup =
+    navGroups.find((g) => g.links.some((l) => l.id === activeSection))?.label ??
+    "Profile";
 
   return (
     <aside className="flex flex-col justify-between py-16 lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:max-w-sm lg:py-24 lg:pr-12">
@@ -94,13 +96,15 @@ export function Sidebar() {
         <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] text-foreground lg:text-4xl">
           {person.name}
         </h1>
-        <p className="mt-3 text-[15px] font-semibold text-accent">
+        <p className="mt-3 text-[0.85rem] font-semibold text-accent">
           {person.title}
         </p>
-        <p className="mt-1 text-sm text-muted">
+
+        <p className="mt-1 text-[0.75rem] text-muted whitespace-nowrap">
           {person.affiliations.join(" · ")}
         </p>
-        <p className="mt-1 text-sm text-muted">{person.location}</p>
+
+        <p className="mt-1 text-[0.65rem] text-muted">{person.location}</p>
 
         {/* Nav */}
         <nav aria-label="Primary" className="mt-12 flex flex-col gap-4">
@@ -112,7 +116,9 @@ export function Sidebar() {
                   href={group.links[0]?.href}
                   className={cn(
                     "mb-1.5 block text-[9px] font-bold uppercase tracking-[0.2em] transition-colors",
-                    isExpanded ? "text-foreground" : "text-muted/40 hover:text-muted",
+                    isExpanded
+                      ? "text-foreground"
+                      : "text-muted/40 hover:text-muted",
                   )}
                 >
                   {group.label}
@@ -180,7 +186,11 @@ export function Sidebar() {
                 key={link.label}
                 aria-label={link.label}
                 href={link.href}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  link.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 target={link.href.startsWith("http") ? "_blank" : undefined}
                 className="text-muted/50 transition-colors hover:text-foreground"
               >
@@ -189,9 +199,7 @@ export function Sidebar() {
             );
           })}
         </div>
-        <p className="mt-6 text-[11px] text-muted/40">
-          © 2026 {person.name}
-        </p>
+        <p className="mt-6 text-[11px] text-muted/40">© 2026 {person.name}</p>
       </div>
     </aside>
   );
