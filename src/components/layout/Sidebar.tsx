@@ -13,7 +13,6 @@ const navGroups = [
   {
     label: "Research",
     links: [
-      { href: "#research", id: "research", label: "Research" },
       { href: "#publications", id: "publications", label: "Publications" },
       { href: "#grants", id: "grants", label: "Grants" },
       { href: "#awards", id: "awards", label: "Awards" },

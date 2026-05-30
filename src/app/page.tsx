@@ -8,7 +8,6 @@ import { GrantsSection } from "@/components/sections/GrantsSection";
 import { IndustrySection } from "@/components/sections/IndustrySection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
-import { ResearchSection } from "@/components/sections/ResearchSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { SoftwareSection } from "@/components/sections/SoftwareSection";
@@ -25,7 +24,6 @@ export default function Home() {
         {/* Profile */}
         <AboutSection />
         {/* Research */}
-        <ResearchSection />
         <PublicationsPreviewSection />
         <GrantsSection />
         <AwardsSection />
