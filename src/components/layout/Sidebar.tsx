@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import NextLink from "next/link";
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
 import { cn } from "@/lib/utils";
@@ -93,9 +94,9 @@ export function Sidebar() {
       <div>
         {/* Identity */}
         <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] lg:text-4xl">
-          <a href="/" className="text-foreground transition-colors hover:text-accent">
+          <NextLink href="/" className="text-foreground transition-colors hover:text-accent">
             {person.name}
-          </a>
+          </NextLink>
         </h1>
         <p className="mt-3 text-[0.85rem] font-semibold text-accent">
           {person.title}

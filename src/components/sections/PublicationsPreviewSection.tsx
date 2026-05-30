@@ -21,7 +21,7 @@ export function PublicationsPreviewSection() {
           View All 22 Publications <span aria-hidden="true">→</span>
         </Link>
       </div>
-      <div className="mt-8 space-y-8">
+      <div className="mt-8 space-y-6">
         {previewPublications.map((publication, index) => (
           <PublicationEntry
             index={index + 1}
