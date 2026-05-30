@@ -12,7 +12,7 @@ const initials = person.name
 export function AboutSection() {
   return (
     <section
-      className="flex min-h-[100svh] flex-col justify-center scroll-mt-8"
+      className="flex min-h-[100svh] flex-col justify-center scroll-mt-8 lg:-mt-24"
       id="about"
     >
       <div className="flex gap-8">
