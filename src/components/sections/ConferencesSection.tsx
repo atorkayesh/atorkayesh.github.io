@@ -1,52 +1,27 @@
+import Link from "next/link";
 import { conferences } from "@/data/conferences";
-import { ConferenceEntry } from "@/components/ui/ConferenceEntry";
+import { ConferenceList, getConferenceYear } from "@/components/ui/ConferenceList";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-function getConferenceYear(date: string) {
-  return date.match(/\d{4}/)?.[0] ?? "Other";
-}
-
-const conferenceGroups = Object.entries(
-  conferences.reduce<Record<string, typeof conferences>>((groups, conference) => {
-    const year = getConferenceYear(conference.date);
-
-    groups[year] ??= [];
-    groups[year].push(conference);
-
-    return groups;
-  }, {}),
-).sort(([yearA], [yearB]) => Number(yearB) - Number(yearA));
+const previewConferences = [...conferences]
+  .sort((a, b) => Number(getConferenceYear(b.date)) - Number(getConferenceYear(a.date)))
+  .slice(0, 5);
 
 export function ConferencesSection() {
   return (
     <section className="scroll-mt-24" id="conferences">
-      <SectionHeading subtitle="Conference talks, posters, and proceedings.">
-        Conferences
-      </SectionHeading>
-      <div className="mt-8">
-        {conferenceGroups.map(([year, yearConferences]) => (
-          <section
-            aria-labelledby={`conferences-${year}`}
-            className="grid gap-x-5 gap-y-4 border-b border-border/40 py-6 first:pt-0 last:border-0 sm:grid-cols-[6rem_1fr]"
-            key={year}
-          >
-            <h3
-              className="font-mono text-xs leading-6 tabular-nums text-muted/80 sm:pt-0.5"
-              id={`conferences-${year}`}
-            >
-              {year}
-            </h3>
-            <div className="space-y-5">
-              {yearConferences.map((conference, index) => (
-                <ConferenceEntry
-                  conference={conference}
-                  key={`${year}-${conference.title}-${index}`}
-                />
-              ))}
-            </div>
-          </section>
-        ))}
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <SectionHeading subtitle="Conference talks, posters, and proceedings.">
+          Conferences
+        </SectionHeading>
+        <Link
+          className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          href="/conferences"
+        >
+          View All Conferences <span aria-hidden="true">→</span>
+        </Link>
       </div>
+      <ConferenceList className="mt-8" conferences={previewConferences} />
     </section>
   );
 }

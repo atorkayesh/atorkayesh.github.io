@@ -56,6 +56,9 @@ const socialLinks = [
 
 const pathSectionMap: Record<string, string> = {
   "/publications": "publications",
+  "/awards": "awards",
+  "/conferences": "conferences",
+  "/contact": "contact",
   "/research": "research",
 };
 
