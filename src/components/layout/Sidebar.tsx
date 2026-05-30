@@ -17,7 +17,7 @@ const navGroups = [
     links: [
       { href: "/#publications", id: "publications", label: "Publications" },
       { href: "/#grants", id: "grants", label: "Grants" },
-      { href: "/#awards", id: "awards", label: "Awards" },
+      { href: "/#awards", id: "awards", label: "Honors & Awards" },
     ],
   },
   {

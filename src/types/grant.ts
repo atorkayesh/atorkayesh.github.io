@@ -1,10 +1,11 @@
 export interface Grant {
   title: string;
-  program: string;
+  institution: string;
   funder: string;
+  role: string;
   pi: string;
   amount?: string;
   yearStart: number;
   yearEnd: number;
-  projects: string[];
+  topics?: string[];
 }

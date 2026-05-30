@@ -6,9 +6,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Awards",
+    title: "Honors & Awards",
     description:
-      "Fellowships, scholarships, and presentation awards received by Ali E. Torkayesh in sustainable transport, renewable fuels, and energy policy research.",
+      "Honors, fellowships, scholarships, and presentation awards received by Ali E. Torkayesh in sustainable transport, renewable fuels, and energy policy research.",
     alternates: {
       canonical: "/awards",
     },
@@ -21,7 +21,7 @@ export default function AwardsPage() {
   return (
     <PageWrapper className="px-0 sm:px-0 lg:px-0">
       <SectionHeading subtitle="Fellowships, scholarships, and presentation awards.">
-        Awards
+        Honors &amp; Awards
       </SectionHeading>
       <div className="mt-10">
         {sortedAwards.map((award) => (

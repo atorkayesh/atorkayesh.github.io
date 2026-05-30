@@ -10,13 +10,13 @@ export function AwardsSection() {
     <section className="scroll-mt-24" id="awards">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <SectionHeading subtitle="Fellowships, grants, and presentation awards.">
-          Awards
+          Honors &amp; Awards
         </SectionHeading>
         <Link
           className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           href="/awards"
         >
-          View All Awards <span aria-hidden="true">→</span>
+          View All Honors &amp; Awards <span aria-hidden="true">→</span>
         </Link>
       </div>
       <div className="mt-8">
