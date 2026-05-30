@@ -10,7 +10,7 @@ export function AwardsSection() {
       <SectionHeading subtitle="Fellowships, grants, and presentation awards.">
         Awards
       </SectionHeading>
-      <div className="mt-8 space-y-5">
+      <div className="mt-8">
         {sortedAwards.map((award) => (
           <AwardItem award={award} key={`${award.year}-${award.title}`} />
         ))}
