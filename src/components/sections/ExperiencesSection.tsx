@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { experiences } from "@/data/experiences";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -9,16 +10,14 @@ export function ExperiencesSection() {
       </SectionHeading>
       <div className="mt-8 grid grid-cols-[auto_1fr] gap-x-5">
         {experiences.map((experience) => (
-          <>
+          <Fragment key={`${experience.yearStart}-${experience.institution}`}>
             <div
               className="whitespace-nowrap border-b border-border/40 py-5 pt-5 font-mono text-xs leading-6 tabular-nums text-muted/80 last-of-type:border-0"
-              key={`period-${experience.yearStart}-${experience.institution}`}
             >
               {experience.period}
             </div>
             <div
               className="min-w-0 border-b border-border/40 py-5 last-of-type:border-0"
-              key={`content-${experience.yearStart}-${experience.institution}`}
             >
               <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
                 {experience.title}
@@ -38,7 +37,7 @@ export function ExperiencesSection() {
                 </p>
               ) : null}
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </section>

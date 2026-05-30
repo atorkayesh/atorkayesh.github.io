@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { positions } from "@/data/positions";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -11,16 +12,14 @@ export function PositionsSection() {
         {positions.map((position) => {
           const isCurrent = position.yearEnd === "Present";
           return (
-            <>
+            <Fragment key={`${position.yearStart}-${position.institution}`}>
               <div
                 className="whitespace-nowrap border-b border-border/40 py-5 font-mono text-xs leading-6 tabular-nums text-muted/80 last-of-type:border-0"
-                key={`period-${position.yearStart}-${position.institution}`}
               >
                 {position.period}
               </div>
               <div
                 className="min-w-0 border-b border-border/40 py-5 last-of-type:border-0"
-                key={`content-${position.yearStart}-${position.institution}`}
               >
                 <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
                   <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
@@ -41,7 +40,7 @@ export function PositionsSection() {
                   {position.departmentLabel ?? "Department"}: <span className="text-foreground/80">{position.department}</span>
                 </p>
               </div>
-            </>
+            </Fragment>
           );
         })}
       </div>
