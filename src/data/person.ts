@@ -3,6 +3,8 @@ import type { Person } from "@/types/person";
 export const person: Person = {
   name: "Ali E. Torkayesh",
   title: "Postdoctoral Researcher",
+  avatar: "/images/profile.png",
+  cvPath: "/documents/Academic_CV-59.pdf",
   affiliations: ["RWTH Aachen University", "Forschungszentrum Jülich"],
   department: "LuF Economics of Sustainability / ICE-JSA",
   location: "Aachen, Germany",

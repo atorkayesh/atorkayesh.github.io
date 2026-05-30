@@ -1,6 +1,8 @@
 export interface Person {
   name: string;
   title: string;
+  avatar?: string;
+  cvPath?: string;
   bio: string;
   email: string;
   email2?: string;
