@@ -11,7 +11,7 @@ const initials = person.name
 
 export function AboutSection() {
   return (
-    <section className="scroll-mt-8" id="about">
+    <section className="flex min-h-[100svh] flex-col justify-center scroll-mt-8" id="about">
       <div className="flex gap-8">
         <div className="min-w-0 flex-1">
           <p className="text-sm leading-7 text-muted">{person.bio}</p>
