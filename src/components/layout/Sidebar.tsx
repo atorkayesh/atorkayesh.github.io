@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
-import { Avatar } from "@/components/ui/Avatar";
 import { cn } from "@/lib/utils";
 
 const navGroups = [
@@ -92,15 +91,6 @@ export function Sidebar() {
     <aside className="flex flex-col justify-between py-16 lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:max-w-sm lg:py-24 lg:pr-12">
       <div>
         {/* Identity */}
-        {person.avatar && (
-          <Avatar
-            alt={person.name}
-            className="mb-5"
-            initials={person.name.split(" ").map((n) => n[0]).join("")}
-            size={72}
-            src={person.avatar}
-          />
-        )}
         <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] text-foreground lg:text-4xl">
           {person.name}
         </h1>
@@ -169,8 +159,19 @@ export function Sidebar() {
         </nav>
       </div>
 
-      {/* Bottom: social icons + download cv */}
+      {/* Bottom: download cv + social icons */}
       <div className="mt-10">
+        {person.cvPath && (
+          <a
+            href={person.cvPath}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="mb-4 inline-flex items-center gap-1.5 rounded border border-border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-muted transition-colors hover:border-foreground hover:text-foreground"
+          >
+            <Download aria-hidden="true" className="size-[11px]" />
+            Download CV
+          </a>
+        )}
         <div className="flex flex-wrap items-center gap-4">
           {socialLinks.map((link) => {
             const Icon = link.icon;
@@ -187,17 +188,6 @@ export function Sidebar() {
               </a>
             );
           })}
-          {person.cvPath && (
-            <a
-              href={person.cvPath}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="flex items-center gap-1.5 rounded border border-border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-muted transition-colors hover:border-foreground hover:text-foreground"
-            >
-              <Download aria-hidden="true" className="size-[11px]" />
-              Download CV
-            </a>
-          )}
         </div>
         <p className="mt-6 text-[11px] text-muted/40">
           © 2026 {person.name}
