@@ -35,7 +35,7 @@ export function ConferenceEntry({ conference }: ConferenceEntryProps) {
       <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
         <em>{conference.conference}</em>
         {hasLocation ? <> &middot; {conference.location}</> : null}
-        {" "}&middot; {conferenceTypeLabels[conference.type]}
+        {conference.type !== "oral" ? <> &middot; {conferenceTypeLabels[conference.type]}</> : null}
       </p>
     </article>
   );
