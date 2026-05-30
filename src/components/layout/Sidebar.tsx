@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import NextLink from "next/link";
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
@@ -9,35 +10,35 @@ import { cn } from "@/lib/utils";
 const navGroups = [
   {
     label: "Profile",
-    links: [{ href: "#about", id: "about", label: "About" }],
+    links: [{ href: "/#about", id: "about", label: "About" }],
   },
   {
     label: "Research",
     links: [
-      { href: "#publications", id: "publications", label: "Publications" },
-      { href: "#grants", id: "grants", label: "Grants" },
-      { href: "#awards", id: "awards", label: "Awards" },
+      { href: "/#publications", id: "publications", label: "Publications" },
+      { href: "/#grants", id: "grants", label: "Grants" },
+      { href: "/#awards", id: "awards", label: "Awards" },
     ],
   },
   {
     label: "Activities",
     links: [
-      { href: "#teaching", id: "teaching", label: "Teaching" },
-      { href: "#conferences", id: "conferences", label: "Conferences" },
-      { href: "#supervision", id: "supervision", label: "Supervision" },
-      { href: "#services", id: "services", label: "Services" },
+      { href: "/#teaching", id: "teaching", label: "Teaching" },
+      { href: "/#conferences", id: "conferences", label: "Conferences" },
+      { href: "/#supervision", id: "supervision", label: "Supervision" },
+      { href: "/#services", id: "services", label: "Services" },
     ],
   },
   {
     label: "Background",
     links: [
-      { href: "#education", id: "education", label: "Education" },
-      { href: "#positions", id: "positions", label: "Positions" },
-      { href: "#experiences", id: "experiences", label: "Experiences" },
-      { href: "#software", id: "software", label: "Software" },
-      { href: "#industry", id: "industry", label: "Industry" },
-      { href: "#skills", id: "skills", label: "Skills" },
-      { href: "#contact", id: "contact", label: "Contact" },
+      { href: "/#education", id: "education", label: "Education" },
+      { href: "/#positions", id: "positions", label: "Positions" },
+      { href: "/#experiences", id: "experiences", label: "Experiences" },
+      { href: "/#software", id: "software", label: "Software" },
+      { href: "/#industry", id: "industry", label: "Industry" },
+      { href: "/#skills", id: "skills", label: "Skills" },
+      { href: "/#contact", id: "contact", label: "Contact" },
     ],
   },
 ];
@@ -53,12 +54,22 @@ const socialLinks = [
   { href: `mailto:${person.email}`, icon: Mail, label: "Email" },
 ].filter((link): link is typeof link & { href: string } => Boolean(link.href));
 
+const pathSectionMap: Record<string, string> = {
+  "/publications": "publications",
+  "/research": "research",
+};
+
 export function Sidebar() {
+  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("about");
 
+  const effectiveActive = pathSectionMap[pathname] ?? activeSection;
+
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
-    window.scrollTo(0, 0);
+    if (!window.location.hash) {
+      window.history.scrollRestoration = "manual";
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   useEffect(() => {
@@ -86,7 +97,7 @@ export function Sidebar() {
   }, []);
 
   const activeGroup =
-    navGroups.find((g) => g.links.some((l) => l.id === activeSection))?.label ??
+    navGroups.find((g) => g.links.some((l) => l.id === effectiveActive))?.label ??
     "Profile";
 
   return (
@@ -132,7 +143,7 @@ export function Sidebar() {
                   )}
                 >
                   {group.links.map((link) => {
-                    const isActive = activeSection === link.id;
+                    const isActive = effectiveActive === link.id;
                     return (
                       <a
                         key={link.id}
