@@ -22,18 +22,22 @@ export default function Home() {
     <>
       <PersonJsonLd />
       <PageWrapper className="flex flex-col gap-28 px-0 sm:px-0 lg:px-0">
+        {/* Profile */}
         <AboutSection />
+        {/* Research */}
         <ResearchSection />
-        <EducationSection />
-        <PositionsSection />
         <PublicationsPreviewSection />
         <GrantsSection />
         <AwardsSection />
+        {/* Activities */}
         <TeachingSection />
         <ConferencesSection />
-        <ExperiencesSection />
         <SupervisionSection />
         <ServicesSection />
+        {/* Background */}
+        <EducationSection />
+        <PositionsSection />
+        <ExperiencesSection />
         <SoftwareSection />
         <IndustrySection />
         <SkillsSection />

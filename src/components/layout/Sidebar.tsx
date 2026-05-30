@@ -10,8 +10,6 @@ const navGroups = [
     label: "Profile",
     links: [
       { href: "#about", id: "about", label: "About" },
-      { href: "#education", id: "education", label: "Education" },
-      { href: "#positions", id: "positions", label: "Positions" },
     ],
   },
   {
@@ -35,6 +33,8 @@ const navGroups = [
   {
     label: "Background",
     links: [
+      { href: "#education", id: "education", label: "Education" },
+      { href: "#positions", id: "positions", label: "Positions" },
       { href: "#experiences", id: "experiences", label: "Experiences" },
       { href: "#software", id: "software", label: "Software" },
       { href: "#industry", id: "industry", label: "Industry" },
@@ -55,15 +55,24 @@ export function Sidebar() {
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const ids = navGroups.flatMap((g) => g.links).map((l) => l.id);
 
     const update = () => {
       const trigger = window.innerHeight * 0.3;
-      let current = ids[0] ?? "about";
-      for (const id of ids) {
-        const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top <= trigger) {
-          current = id;
+      const sections = ids
+        .map((id) => document.getElementById(id))
+        .filter((el): el is HTMLElement => el !== null)
+        .sort((a, b) => a.offsetTop - b.offsetTop);
+
+      let current = sections[0]?.id ?? "about";
+      for (const el of sections) {
+        if (el.getBoundingClientRect().top <= trigger) {
+          current = el.id;
         }
       }
       setActiveSection(current);
