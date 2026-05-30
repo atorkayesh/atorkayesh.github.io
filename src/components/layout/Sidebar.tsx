@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
 import { person } from "@/data/person";
-import { Avatar } from "@/components/ui/Avatar";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -19,12 +18,6 @@ const socialLinks = [
   { href: person.socialLinks.orcid, icon: BadgeCheck, label: "ORCID" },
   { href: `mailto:${person.email}`, icon: Mail, label: "Email" },
 ].filter((link): link is typeof link & { href: string } => Boolean(link.href));
-
-const initials = person.name
-  .split(" ")
-  .map((part) => part[0])
-  .join("")
-  .slice(0, 2);
 
 export function Sidebar() {
   const [activeSection, setActiveSection] = useState("");
@@ -53,14 +46,6 @@ export function Sidebar() {
   return (
     <aside className="flex flex-col justify-between py-16 lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:max-w-sm lg:py-24 lg:pr-12">
       <div>
-        {/* Photo — replace src with "/photo.jpg" when available */}
-        <Avatar
-          alt={person.name}
-          className="mb-10 text-2xl font-semibold ring-4 ring-border/20 shadow-sm"
-          initials={initials}
-          size={100}
-        />
-
         {/* Identity */}
         <h1 className="font-serif text-4xl font-bold leading-[1.1] text-foreground lg:text-5xl">
           {person.name}
