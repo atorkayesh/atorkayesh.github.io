@@ -6,24 +6,28 @@ type AvatarProps = {
   className?: string;
   initials: string;
   size?: number;
+  width?: number;
+  height?: number;
   src?: string;
 };
 
-export function Avatar({ alt = "", className, initials, size = 64, src }: AvatarProps) {
+export function Avatar({ alt = "", className, initials, size = 64, width, height, src }: AvatarProps) {
+  const w = width ?? size;
+  const h = height ?? size;
   return (
     <span
       className={cn(
         "relative inline-flex shrink-0 items-center justify-center overflow-hidden border border-border bg-foreground/10 font-medium text-foreground",
         className,
       )}
-      style={{ height: size, width: size }}
+      style={{ height: h, width: w }}
     >
       {src ? (
         <Image
           alt={alt}
           className="object-cover"
           fill
-          sizes={`${size}px`}
+          sizes={`${w}px`}
           src={src}
         />
       ) : (
