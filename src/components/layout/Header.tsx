@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { person } from "@/data/person";
 import { cn } from "@/lib/utils";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 import { PageWrapper } from "./PageWrapper";
@@ -62,31 +61,23 @@ export function Header() {
         isScrolled && "bg-background/96 shadow-sm",
       )}
     >
-      <PageWrapper className="relative flex h-14 items-center justify-between gap-8">
+      <PageWrapper className="relative flex h-14 items-center justify-between">
+        {/* Badge — left anchor */}
         <a
-          className="group flex min-w-0 shrink-0 items-center gap-3 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          aria-label="Ali E. Torkayesh — back to top"
+          className="group shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           href="#main-content"
         >
-          <span
-            aria-hidden="true"
-            className="hidden size-9 shrink-0 items-center justify-center rounded-md border border-border/60 bg-foreground font-serif text-[13px] font-semibold leading-none text-background shadow-sm transition-all group-hover:-translate-y-0.5 group-hover:shadow-md sm:inline-flex"
-          >
+          <span className="inline-flex size-10 items-center justify-center rounded-md border border-border/70 bg-foreground font-serif text-[14px] font-bold tracking-wide text-background shadow-sm transition-all group-hover:-translate-y-0.5 group-hover:shadow-md">
             AT
-          </span>
-          <span className="min-w-0">
-            <span className="block truncate font-serif text-[15px] font-semibold leading-tight tracking-normal text-foreground transition-colors group-hover:text-accent">
-              {person.name}
-            </span>
-            <span className="mt-[3px] flex items-center gap-1.5">
-              <span aria-hidden="true" className="inline-block h-px w-3 shrink-0 bg-accent/60" />
-              <span className="truncate text-[9.5px] font-semibold uppercase tracking-[0.18em] text-muted/60">
-                Postdoctoral Researcher
-              </span>
-            </span>
           </span>
         </a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
+        {/* Nav — absolutely centered in the bar */}
+        <nav
+          aria-label="Primary"
+          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex"
+        >
           {navLinks.map((link) => (
             <a
               className={cn(
@@ -107,10 +98,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center md:flex">
+        {/* Dark mode toggle — right anchor */}
+        <div className="hidden shrink-0 items-center md:flex">
           <DarkModeToggle />
         </div>
 
+        {/* Mobile menu button */}
         <div className="fixed right-5 top-2.5 z-50 flex shrink-0 items-center gap-2 md:hidden">
           <button
             aria-controls="mobile-navigation"
@@ -125,6 +118,7 @@ export function Header() {
         </div>
       </PageWrapper>
 
+      {/* Mobile nav drawer */}
       <div
         className={cn(
           "grid overflow-hidden border-t border-border/30 bg-background/96 backdrop-blur-xl transition-[grid-template-rows]",
