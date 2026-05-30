@@ -9,9 +9,9 @@ export const services: AcademicService[] = [
     journals: [
       "Applied Energy",
       "Annals of Operations Research",
-      "Engineering Applications of AI",
+      "Engineering Applications of Artificial Intelligence",
       "Expert Systems with Applications",
-      "Cleaner Production",
+      "Journal of Cleaner Production",
       "Information Sciences",
       "Case Studies on Transport Policy",
       "Transport Policy",
@@ -26,7 +26,7 @@ export const services: AcademicService[] = [
       "Sustainable Production and Consumption",
       "Socio-Economic Planning Sciences",
       "Sustainable Cities and Society",
-      "IEEE Transactions on Engineering Management",
+      "IEEE Transactions on Engineering Management (IEEE TEM)",
     ],
   },
 ];
