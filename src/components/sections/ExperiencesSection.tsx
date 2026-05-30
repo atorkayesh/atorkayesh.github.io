@@ -7,16 +7,19 @@ export function ExperiencesSection() {
       <SectionHeading>
         Academic Experiences
       </SectionHeading>
-      <div className="mt-8">
+      <div className="mt-8 grid grid-cols-[auto_1fr] gap-x-5">
         {experiences.map((experience) => (
-          <article
-            className="grid grid-cols-[auto_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0"
-            key={`${experience.title}-${experience.institution}-${experience.yearStart}`}
-          >
-            <div className="whitespace-nowrap pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
+          <>
+            <div
+              className="whitespace-nowrap border-b border-border/40 py-5 pt-5 font-mono text-xs leading-6 tabular-nums text-muted/80 last-of-type:border-0"
+              key={`period-${experience.yearStart}-${experience.institution}`}
+            >
               {experience.period}
             </div>
-            <div className="min-w-0">
+            <div
+              className="min-w-0 border-b border-border/40 py-5 last-of-type:border-0"
+              key={`content-${experience.yearStart}-${experience.institution}`}
+            >
               <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
                 {experience.title}
               </h3>
@@ -35,7 +38,7 @@ export function ExperiencesSection() {
                 </p>
               ) : null}
             </div>
-          </article>
+          </>
         ))}
       </div>
     </section>
