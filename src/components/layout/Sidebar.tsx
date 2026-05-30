@@ -55,25 +55,23 @@ export function Sidebar() {
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
-    const sections = navGroups
-      .flatMap((g) => g.links)
-      .map((link) => document.getElementById(link.id))
-      .filter((s): s is HTMLElement => Boolean(s));
+    const ids = navGroups.flatMap((g) => g.links).map((l) => l.id);
 
-    if (sections.length === 0) return;
+    const update = () => {
+      const trigger = window.innerHeight * 0.3;
+      let current = ids[0] ?? "about";
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= trigger) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    };
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target.id) setActiveSection(visible.target.id);
-      },
-      { rootMargin: "-20% 0px -55% 0px", threshold: [0.1, 0.25, 0.5] },
-    );
-
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
   }, []);
 
   const activeGroup = navGroups.find((g) =>
@@ -113,7 +111,7 @@ export function Sidebar() {
                 <div
                   className={cn(
                     "flex flex-col overflow-hidden transition-all duration-300 ease-in-out",
-                    isExpanded ? "max-h-48 opacity-100" : "max-h-0 opacity-0",
+                    isExpanded ? "max-h-64 opacity-100" : "max-h-0 opacity-0",
                   )}
                 >
                   {group.links.map((link) => {
