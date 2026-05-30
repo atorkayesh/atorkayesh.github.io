@@ -18,7 +18,7 @@ export function IndustrySection() {
     return null;
   }
 
-  const responsibilities = getResponsibilities(industryExperience.description);
+  const responsibilities = getResponsibilities(industryExperience.details);
 
   return (
     <section className="scroll-mt-24" id="industry">
@@ -28,7 +28,7 @@ export function IndustrySection() {
       <div className="mt-8">
         <article className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]">
           <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
-            {industryExperience.yearStart}&ndash;{industryExperience.yearEnd}
+            {industryExperience.period}
           </div>
           <div className="min-w-0">
             <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">

@@ -4,13 +4,13 @@ export const software: SoftwarePackage[] = [
   {
     name: "DEMATELab",
     language: "Python",
-    description: "Cause-and-effect analysis with LLM-assisted interpretation.",
+    description: "A Python-based application for cause-and-effect analysis with LLM-assisted interpretation",
     githubUrl: "https://github.com/atorkayesh/DEMATELab",
   },
   {
     name: "Policy Coherence Kit",
     language: "Python",
-    description: "Perceived policy coherence analysis.",
+    description: "A Python-based tool for perceived policy coherence analysis",
     githubUrl: "https://github.com/atorkayesh/PolicyCoherenceKit",
   },
 ];

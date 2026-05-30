@@ -1,9 +1,10 @@
 export interface AcademicExperience {
-  type: string;
   title: string;
   institution: string;
+  subUnitLabel?: string;
+  subUnit?: string;
   location: string;
+  period: string;
   yearStart: number;
-  yearEnd: number | "Present";
-  description?: string;
+  details?: string;
 }

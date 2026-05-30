@@ -13,10 +13,10 @@ export function PositionsSection() {
 
           return (
             <article
-              className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]"
+              className="grid grid-cols-[auto_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0"
               key={`${position.role}-${position.institution}-${position.yearStart}`}
             >
-              <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
+              <div className="whitespace-nowrap pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
                 {position.period}
               </div>
               <div className="min-w-0">
