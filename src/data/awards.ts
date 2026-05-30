@@ -4,13 +4,11 @@ export const awards: Award[] = [
   {
     title: "RWTH – Tsinghua University Senior Research Fellowship",
     year: 2026,
-    awardedBy: "RWTH Aachen University & Tsinghua University",
     description: "Research stay at Tsinghua University",
   },
   {
     title: "IDEA League Research Grant",
     year: 2025,
-    awardedBy: "IDEA League",
     description: "Research stay at TU Delft",
   },
   {
@@ -28,7 +26,6 @@ export const awards: Award[] = [
   {
     title: "Bursary by the Association of European Operational Research Societies",
     year: 2024,
-    awardedBy: "Association of European Operational Research Societies (AEORS)",
     description: "NATCOR PhD Course at the University of Southampton",
   },
   {

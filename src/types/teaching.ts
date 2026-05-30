@@ -2,7 +2,8 @@ export interface Teaching {
   role: string;
   institution: string;
   location: string;
+  period: string;
   yearStart: number;
-  yearEnd: number | "Present";
+  chair?: string;
   courses: string[];
 }

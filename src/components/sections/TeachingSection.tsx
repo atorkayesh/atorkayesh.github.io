@@ -14,7 +14,7 @@ export function TeachingSection() {
             key={`${entry.institution}-${entry.yearStart}`}
           >
             <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
-              {entry.yearStart}&ndash;{entry.yearEnd}
+              {entry.period}
             </div>
             <div className="min-w-0">
               <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
@@ -24,6 +24,11 @@ export function TeachingSection() {
                 <span className="font-medium text-foreground/80">{entry.institution}</span>
                 {" "}&middot; {entry.location}
               </p>
+              {entry.chair ? (
+                <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
+                  {entry.chair}
+                </p>
+              ) : null}
               <ul className="mt-3 space-y-1.5">
                 {entry.courses.map((course) => (
                   <li

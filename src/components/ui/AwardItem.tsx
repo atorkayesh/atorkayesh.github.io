@@ -14,10 +14,15 @@ export function AwardItem({ award }: AwardItemProps) {
         <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
           {award.title}
         </h3>
-        <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
-          <span className="font-medium text-foreground/80">{award.awardedBy}</span>
-          {award.description ? <> &middot; <span>{award.description}</span></> : null}
-        </p>
+        {(award.awardedBy ?? award.description) ? (
+          <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
+            {award.awardedBy ? (
+              <span className="font-medium text-foreground/80">{award.awardedBy}</span>
+            ) : null}
+            {award.awardedBy && award.description ? <> &middot; </> : null}
+            {award.description ? <span>{award.description}</span> : null}
+          </p>
+        ) : null}
       </div>
     </article>
   );
