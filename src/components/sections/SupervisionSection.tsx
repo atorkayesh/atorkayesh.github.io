@@ -13,7 +13,7 @@ export function SupervisionSection() {
   return (
     <section className="scroll-mt-24" id="supervision">
       <SectionHeading subtitle="Supervised doctoral, master's, bachelor's, and internship work.">
-        Supervision
+        Student Supervision
       </SectionHeading>
       <div className="mt-8 space-y-10">
         {levelGroups.map((group) => {

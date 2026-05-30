@@ -25,7 +25,7 @@ const navGroups = [
     links: [
       { href: "/#teaching", id: "teaching", label: "Teaching" },
       { href: "/#conferences", id: "conferences", label: "Conferences" },
-      { href: "/#supervision", id: "supervision", label: "Supervision" },
+      { href: "/#supervision", id: "supervision", label: "Student Supervision" },
       { href: "/#services", id: "services", label: "Services" },
     ],
   },
