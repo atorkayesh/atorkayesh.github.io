@@ -7,6 +7,7 @@ import { GrantsSection } from "@/components/sections/GrantsSection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
 import { ResearchSection } from "@/components/sections/ResearchSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SupervisionSection } from "@/components/sections/SupervisionSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
 import { PageWrapper } from "@/components/layout/PageWrapper";
@@ -25,6 +26,7 @@ export default function Home() {
       <ConferencesSection />
       <ExperiencesSection />
       <SupervisionSection />
+      <ServicesSection />
       <section className="scroll-mt-8" id="contact" />
     </PageWrapper>
   );
