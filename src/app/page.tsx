@@ -5,6 +5,7 @@ import { GrantsSection } from "@/components/sections/GrantsSection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
 import { ResearchSection } from "@/components/sections/ResearchSection";
+import { TeachingSection } from "@/components/sections/TeachingSection";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       <PublicationsPreviewSection />
       <GrantsSection />
       <AwardsSection />
-      <section className="scroll-mt-8" id="teaching" />
+      <TeachingSection />
       <section className="scroll-mt-8" id="contact" />
     </PageWrapper>
   );
