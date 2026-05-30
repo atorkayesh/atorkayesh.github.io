@@ -91,7 +91,7 @@ export function Sidebar() {
     <aside className="flex flex-col justify-between py-16 lg:sticky lg:top-0 lg:h-screen lg:w-[44%] lg:max-w-sm lg:py-24 lg:pr-12">
       <div>
         {/* Identity */}
-        <h1 className="font-serif text-4xl font-bold leading-[1.1] text-foreground lg:text-5xl">
+        <h1 className="whitespace-nowrap font-serif text-3xl font-bold leading-[1.1] text-foreground lg:text-4xl">
           {person.name}
         </h1>
         <p className="mt-3 text-[15px] font-semibold text-accent">
@@ -178,13 +178,13 @@ export function Sidebar() {
             );
           })}
           <a
-            aria-label="Download CV"
             href="/documents/ali-torkayesh-cv.pdf"
             rel="noopener noreferrer"
             target="_blank"
-            className="text-muted/50 transition-colors hover:text-foreground"
+            className="flex items-center gap-1.5 rounded border border-border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-muted transition-colors hover:border-foreground hover:text-foreground"
           >
-            <Download aria-hidden="true" className="size-[18px]" />
+            <Download aria-hidden="true" className="size-[11px]" />
+            Download CV
           </a>
         </div>
         <p className="mt-6 text-[11px] text-muted/40">
