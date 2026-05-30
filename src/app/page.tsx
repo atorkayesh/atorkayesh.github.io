@@ -2,6 +2,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { AwardsSection } from "@/components/sections/AwardsSection";
 import { ConferencesSection } from "@/components/sections/ConferencesSection";
 import { EducationSection } from "@/components/sections/EducationSection";
+import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
 import { GrantsSection } from "@/components/sections/GrantsSection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
@@ -21,6 +22,7 @@ export default function Home() {
       <AwardsSection />
       <TeachingSection />
       <ConferencesSection />
+      <ExperiencesSection />
       <section className="scroll-mt-8" id="contact" />
     </PageWrapper>
   );
