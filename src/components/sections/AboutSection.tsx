@@ -15,7 +15,7 @@ export function AboutSection() {
       className="flex min-h-[100svh] flex-col justify-center scroll-mt-8 lg:-mt-24"
       id="about"
     >
-      <div className="flex gap-8">
+      <div className="flex flex-col-reverse gap-8 sm:flex-row">
         <div className="min-w-0 flex-1">
           <p className="text-sm leading-7 text-muted">{person.bio}</p>
           <div
@@ -27,7 +27,7 @@ export function AboutSection() {
             ))}
           </div>
         </div>
-        <div className="shrink-0">
+        <div className="flex shrink-0 justify-center sm:block">
           {/* Replace src with "/photo.jpg" when available */}
           <Avatar
             alt={person.name}
