@@ -14,27 +14,31 @@ import { SkillsSection } from "@/components/sections/SkillsSection";
 import { SoftwareSection } from "@/components/sections/SoftwareSection";
 import { SupervisionSection } from "@/components/sections/SupervisionSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
+import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 
 export default function Home() {
   return (
-    <PageWrapper className="flex flex-col gap-28 px-0 sm:px-0 lg:px-0">
-      <AboutSection />
-      <ResearchSection />
-      <EducationSection />
-      <PositionsSection />
-      <PublicationsPreviewSection />
-      <GrantsSection />
-      <AwardsSection />
-      <TeachingSection />
-      <ConferencesSection />
-      <ExperiencesSection />
-      <SupervisionSection />
-      <ServicesSection />
-      <SoftwareSection />
-      <IndustrySection />
-      <SkillsSection />
-      <ContactSection />
-    </PageWrapper>
+    <>
+      <PersonJsonLd />
+      <PageWrapper className="flex flex-col gap-28 px-0 sm:px-0 lg:px-0">
+        <AboutSection />
+        <ResearchSection />
+        <EducationSection />
+        <PositionsSection />
+        <PublicationsPreviewSection />
+        <GrantsSection />
+        <AwardsSection />
+        <TeachingSection />
+        <ConferencesSection />
+        <ExperiencesSection />
+        <SupervisionSection />
+        <ServicesSection />
+        <SoftwareSection />
+        <IndustrySection />
+        <SkillsSection />
+        <ContactSection />
+      </PageWrapper>
+    </>
   );
 }
