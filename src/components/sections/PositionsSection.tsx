@@ -17,7 +17,7 @@ export function PositionsSection() {
               key={`${position.role}-${position.institution}-${position.yearStart}`}
             >
               <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
-                {position.yearStart}&ndash;{position.yearEnd}
+                {position.period}
               </div>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
@@ -33,9 +33,11 @@ export function PositionsSection() {
                 </div>
                 <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
                   <span className="font-medium text-foreground/80">{position.institution}</span>
-                  {" "}&middot; {position.department}
+                  {" "}&middot; {position.location}
                 </p>
-                <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">{position.location}</p>
+                <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
+                  {position.departmentLabel ?? "Department"}: <span className="text-foreground/80">{position.department}</span>
+                </p>
               </div>
             </article>
           );
