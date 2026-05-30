@@ -4,6 +4,7 @@ import { ConferencesSection } from "@/components/sections/ConferencesSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
 import { GrantsSection } from "@/components/sections/GrantsSection";
+import { IndustrySection } from "@/components/sections/IndustrySection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
 import { ResearchSection } from "@/components/sections/ResearchSection";
@@ -29,6 +30,7 @@ export default function Home() {
       <SupervisionSection />
       <ServicesSection />
       <SoftwareSection />
+      <IndustrySection />
       <section className="scroll-mt-8" id="contact" />
     </PageWrapper>
   );
