@@ -18,15 +18,18 @@ export function EducationSection() {
             </div>
             <div className="min-w-0">
               <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
-                {item.degree} in {item.field}
+                {item.degree}
               </h3>
+              <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
+                {item.field}
+              </p>
               <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
                 <span className="font-medium text-foreground/80">{item.institution}</span>
                 {" "}&middot; {item.location}
               </p>
               {item.thesis ? (
                 <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
-                  <span className="font-medium text-foreground/80">Thesis:</span> {item.thesis}
+                  <span className="font-medium text-foreground/80">{item.thesisLabel ?? "Thesis"}:</span> {item.thesis}
                 </p>
               ) : null}
             </div>

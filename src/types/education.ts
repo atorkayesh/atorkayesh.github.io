@@ -5,5 +5,6 @@ export interface Education {
   location: string;
   yearStart: number;
   yearEnd: number;
+  thesisLabel?: string;
   thesis?: string;
 }

@@ -2,21 +2,23 @@ import type { Education } from "@/types/education";
 
 export const education: Education[] = [
   {
-    degree: "PhD",
-    field: "Management, Business & Economics",
+    degree: "Doctor of Philosophy (Ph.D.)",
+    field: "Management, Business and Economics",
     institution: "RWTH Aachen University",
-    location: "Aachen",
+    location: "Aachen, Germany",
     yearStart: 2021,
     yearEnd: 2026,
-    thesis: "Renewable Fuels for Sustainable Transport",
+    thesisLabel: "Dissertation",
+    thesis: "Renewable Fuels for Sustainable Transport: A Systems Perspective on Policy Analysis and Market Assessment",
   },
   {
-    degree: "MSc",
+    degree: "Master of Science (M.Sc.)",
     field: "Industrial Engineering",
-    institution: "Sabanci University",
-    location: "Istanbul",
+    institution: "Sabancı University",
+    location: "Istanbul, Türkiye",
     yearStart: 2018,
     yearEnd: 2020,
-    thesis: "Bi-Level Optimization for Collusion Detection in Electricity Markets",
+    thesisLabel: "Thesis",
+    thesis: "Reformulations of a Bi-Level Optimization Problem Detecting Collusions in Deregulated Electricity Markets",
   },
 ];
