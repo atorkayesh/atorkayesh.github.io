@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const categories: Array<{ label: string; value: SkillCategory }> = [
   { label: "Programming", value: "programming" },
-  { label: "Technical", value: "technical" },
+  { label: "Technical Tools", value: "technical" },
   { label: "Languages", value: "language" },
 ];
 

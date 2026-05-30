@@ -9,6 +9,7 @@ import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
 import { ResearchSection } from "@/components/sections/ResearchSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { SkillsSection } from "@/components/sections/SkillsSection";
 import { SoftwareSection } from "@/components/sections/SoftwareSection";
 import { SupervisionSection } from "@/components/sections/SupervisionSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
@@ -31,6 +32,7 @@ export default function Home() {
       <ServicesSection />
       <SoftwareSection />
       <IndustrySection />
+      <SkillsSection />
       <section className="scroll-mt-8" id="contact" />
     </PageWrapper>
   );
