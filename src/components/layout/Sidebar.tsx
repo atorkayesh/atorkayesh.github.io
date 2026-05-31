@@ -21,6 +21,18 @@ const navGroups = [
     links: [{ href: "/#about", id: "about", label: "About" }],
   },
   {
+    label: "Background",
+    links: [
+      { href: "/#education", id: "education", label: "Education" },
+      { href: "/#positions", id: "positions", label: "Positions" },
+      { href: "/#experiences", id: "experiences", label: "Experiences" },
+      { href: "/#software", id: "software", label: "Software" },
+      { href: "/#industry", id: "industry", label: "Industry Experiences" },
+      { href: "/#skills", id: "skills", label: "Skills" },
+      { href: "/#contact", id: "contact", label: "Contact" },
+    ],
+  },
+  {
     label: "Research",
     links: [
       { href: "/#publications", id: "publications", label: "Publications" },
@@ -35,18 +47,6 @@ const navGroups = [
       { href: "/#conferences", id: "conferences", label: "Conferences" },
       { href: "/#supervision", id: "supervision", label: "Student Supervision" },
       { href: "/#services", id: "services", label: "Services" },
-    ],
-  },
-  {
-    label: "Background",
-    links: [
-      { href: "/#education", id: "education", label: "Education" },
-      { href: "/#positions", id: "positions", label: "Positions" },
-      { href: "/#experiences", id: "experiences", label: "Experiences" },
-      { href: "/#software", id: "software", label: "Software" },
-      { href: "/#industry", id: "industry", label: "Industry Experiences" },
-      { href: "/#skills", id: "skills", label: "Skills" },
-      { href: "/#contact", id: "contact", label: "Contact" },
     ],
   },
 ];
