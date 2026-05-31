@@ -9,21 +9,6 @@ The site presents publications, grants, awards, teaching, supervision, conferenc
 software in a calm, academic register — designed to read like a scholarly profile rather than a
 marketing page, with first-class SEO and accessibility throughout.
 
-> Live site: configured via `NEXT_PUBLIC_SITE_URL` (e.g. `https://torkayesh-portfolio.vercel.app`)
-
----
-
-## Highlights
-
-- **Single source of truth** — all scholarly content lives in typed TypeScript data files under
-  `src/data/`, validated against domain types in `src/types/`. No CMS, no database.
-- **Static & fast** — built on the Next.js App Router with React Server Components, optimized fonts,
-  and Vercel Analytics + Speed Insights.
-- **SEO & a11y first** — generated `sitemap.ts`, `robots.ts`, JSON-LD structured data, skip-to-content,
-  semantic headings, and keyboard-navigable UI.
-- **Searchable** — client-side fuzzy search (Fuse.js) across publications and other records.
-- **Theming** — light/dark mode via `next-themes`, with motion handled by Framer Motion.
-
 ---
 
 ## Tech Stack
@@ -98,37 +83,6 @@ robots, and JSON-LD:
 ```bash
 NEXT_PUBLIC_SITE_URL=https://your-domain.example
 ```
-
----
-
-## Editing Content
-
-All scholarly records are plain TypeScript — no admin UI is needed.
-
-1. Open the relevant file in `src/data/` (e.g. `publications.ts`).
-2. Add or edit an entry; the matching type in `src/types/` enforces the shape.
-3. Save — the dev server hot-reloads. Run `npm run build` before deploying.
-
-For example, the homepage hero stats and biography are defined once in `src/data/person.ts`.
-
----
-
-## Conventions
-
-- **No global CSS for styling.** `globals.css` holds only CSS-variable definitions and bare resets.
-  All component styles use Tailwind classes, CSS Modules, `<style>` blocks, or inline styles.
-- **Quiet, academic UI.** Favor restrained, scholarly presentation over marketing-style flourishes.
-- **Preserve SEO & accessibility** on every public-facing page.
-- This project uses a newer Next.js with breaking changes — see `AGENTS.md` and consult the local
-  docs in `node_modules/next/dist/docs/` before changing framework code.
-
----
-
-## Deployment
-
-Optimized for [Vercel](https://vercel.com). Push to the connected repository, set
-`NEXT_PUBLIC_SITE_URL` in the project environment, and deploy. Any platform that supports a Next.js
-production build (`npm run build` + `npm start`) will also work.
 
 ---
 
