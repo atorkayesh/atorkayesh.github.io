@@ -11,7 +11,7 @@ export function PublicationsPreviewSection() {
   return (
     <section className="scroll-mt-24" id="publications">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <SectionHeading subtitle="Selected Peer-Reviewed Publications">
+        <SectionHeading subtitle="Selected Research Articles">
           Publications
         </SectionHeading>
         <Link

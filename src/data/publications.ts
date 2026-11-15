@@ -17,7 +17,7 @@ export const publications: Publication[] = [
   },
   {
     id: "power-to-x-market-diffusion-cognitive-approach-2025",
-    title: "Market diffusion of Power-to-X: a cognitive approach",
+    title: "Market diffusion of Power-to-X fuels in Germany: A cognitive approach with robust reasoning for policy support",
     authors: ["Ali Torkayesh", "Sandra Venghaus"],
     journal: "Applied Energy",
     year: 2025,
@@ -27,7 +27,7 @@ export const publications: Publication[] = [
   },
   {
     id: "cut-based-matheuristic-electricity-markets-2025",
-    title: "Cut-based matheuristic for electricity markets",
+    title: "Cut-based matheuristic algorithms to detect tacit collusion in deregulated electricity markets",
     authors: ["Ibrahim Elhüseyni", "Deniz Celebi", "Güven Şahin", "Ali Torkayesh", "M. Yılmaz"],
     journal: "Energy Sources, Part B: Economics, Planning, and Policy",
     year: 2025,
@@ -37,7 +37,7 @@ export const publications: Publication[] = [
   },
   {
     id: "expert-evaluation-fuel-alternatives-germany-2025",
-    title: "Expert-based evaluation of fuel alternatives in Germany",
+    title: "An expert-based evaluation of fuel alternatives for green road passenger transport in Germany",
     authors: ["Javier Perez Vera", "Ali Torkayesh", "Sandra Venghaus"],
     journal: "Case Studies on Transport Policy",
     year: 2025,
@@ -47,7 +47,7 @@ export const publications: Publication[] = [
   },
   {
     id: "type-2-fuzzy-vikor-eco-conscious-freight-2025",
-    title: "Type-2 fuzzy VIKOR for eco-conscious freight",
+    title: "Leading the green charge: A novel type-2 fuzzy VIKOR method applied to eco-conscious freight transport",
     authors: ["Sina Hendiani", "Ali Torkayesh", "Sandra Venghaus", "Grit Walther"],
     journal: "Expert Systems with Applications",
     year: 2025,
@@ -57,7 +57,7 @@ export const publications: Publication[] = [
   },
   {
     id: "fossil-to-alternative-fuels-strategy-germany-2025",
-    title: "From fossil to alternative fuels: strategy for Germany",
+    title: "From fossil fuels to alternative fuels: strategy development for a sustainable transport sector in Germany",
     authors: ["Franz Christian Vorwerg", "Ali Torkayesh", "Sandra Venghaus"],
     journal: "Energy, Sustainability and Society",
     year: 2025,
@@ -77,7 +77,7 @@ export const publications: Publication[] = [
   },
   {
     id: "renewable-fuels-market-development-barriers-2024",
-    title: "Market development barriers for renewable fuels",
+    title: "Fueling the future: Overcoming the barriers to market development of renewable fuels in Germany using a novel analytical approach",
     authors: ["Ali Torkayesh", "Sina Hendiani", "Grit Walther", "Sandra Venghaus"],
     journal: "European Journal of Operational Research",
     year: 2024,
@@ -87,7 +87,7 @@ export const publications: Publication[] = [
   },
   {
     id: "transport-policy-maze-climate-neutrality-2024",
-    title: "Decoding the transport policy maze for climate neutrality",
+    title: "Decoding the transport policy maze towards climate neutrality: Cross-sectoral policy landscapes",
     authors: ["Ali Torkayesh", "Sandra Venghaus"],
     journal: "Renewable and Sustainable Energy Reviews",
     year: 2024,
@@ -97,7 +97,7 @@ export const publications: Publication[] = [
   },
   {
     id: "ml-driven-mcda-ls-svm-2023",
-    title: "Machine-learning-driven MCDA with LS-SVM",
+    title: "A machine learning driven multiple criteria decision analysis using LS-SVM feature elimination: Sustainability performance assessment with incomplete data",
     authors: ["Amir I. Maghsoodi", "Ali Torkayesh", "Lincoln C. Wood", "Enrique Herrera-Viedma", "Kannan Govindan"],
     journal: "Engineering Applications of Artificial Intelligence",
     year: 2023,
@@ -107,7 +107,7 @@ export const publications: Publication[] = [
   },
   {
     id: "resilient-recycling-partner-selection-waste-management-2023",
-    title: "Resilient recycling partner selection in waste management",
+    title: "Sustainable resilient recycling partner selection for urban waste management: Consolidating perspectives of decision-makers and experts",
     authors: ["Ghasem Haseli", "Ali Torkayesh", "Mohammad H. Keshteli", "Sandra Venghaus"],
     journal: "Applied Soft Computing",
     year: 2023,
@@ -117,7 +117,7 @@ export const publications: Publication[] = [
   },
   {
     id: "industry-4-mobility-fuzzy-qfd-bwm-2022",
-    title: "Industry 4.0 in the mobility sector using fuzzy QFD-BWM",
+    title: "Analysis of industry 4.0 implementation in mobility sector: An integrated approach based on QFD, BWM, and stratified combined compromise solution under fuzzy environment",
     authors: ["Ali Torkayesh", "Morteza Yazdani", "Domingo Ribeiro-Soriano"],
     journal: "Journal of Industrial Information Integration",
     year: 2022,
@@ -127,7 +127,7 @@ export const publications: Publication[] = [
   },
   {
     id: "interval-valued-neutrosophic-municipal-waste-management-2022",
-    title: "Interval-valued neutrosophic approach for municipal waste management",
+    title: "A multi-distance interval-valued neutrosophic approach for social failure detection in sustainable municipal waste management",
     authors: ["Ali Torkayesh", "Madjid Tavana", "Francisco J. Santos-Arteaga"],
     journal: "Journal of Cleaner Production",
     year: 2022,
@@ -137,7 +137,7 @@ export const publications: Publication[] = [
   },
   {
     id: "healthcare-waste-disinfection-facility-fermatean-fuzzy-2022",
-    title: "Healthcare waste disinfection facility selection using fermatean fuzzy methods",
+    title: "Locating a disinfection facility for hazardous healthcare waste in the COVID-19 era: a novel approach based on Fermatean fuzzy ITARA-MARCOS and random forest recursive feature elimination algorithm",
     authors: ["Vladimir Simic", "Ali Torkayesh", "Amir I. Maghsoodi"],
     journal: "Annals of Operations Research",
     year: 2022,
@@ -147,7 +147,7 @@ export const publications: Publication[] = [
   },
   {
     id: "air-quality-assessment-europe-2022",
-    title: "Air quality assessment in Europe",
+    title: "A comparative assessment of air quality across European countries using an integrated decision support model",
     authors: ["Ali Torkayesh", "Reza Alizadeh", "Leila Soltanisehat", "Sara E. Torkayesh", "Henrik Lund"],
     journal: "Socio-Economic Planning Sciences",
     year: 2022,
@@ -157,7 +157,7 @@ export const publications: Publication[] = [
   },
   {
     id: "fuzzy-resiliency-food-supply-chain-spain-2022",
-    title: "Fuzzy resiliency analysis for the food supply chain in Spain",
+    title: "A fuzzy group decision-making model to measure resiliency in a food supply chain: A case study in Spain",
     authors: ["Morteza Yazdani", "Ali Torkayesh", "Prasenjit Chatterjee", "et al."],
     journal: "Socio-Economic Planning Sciences",
     year: 2022,
@@ -167,7 +167,7 @@ export const publications: Publication[] = [
   },
   {
     id: "stratified-bwm-waste-disposal-technology-2021",
-    title: "Stratified BWM for waste disposal technology selection",
+    title: "Sustainable waste disposal technology selection: The stratified best-worst multi-criteria decision-making method",
     authors: ["Ali Torkayesh", "Babak Malmir", "Mohammad Reza Asadabadi"],
     journal: "Waste Management",
     year: 2021,
@@ -177,7 +177,7 @@ export const publications: Publication[] = [
   },
   {
     id: "trust-battery-swapping-stations-e-scooters-2021",
-    title: "TRUST approach for battery swapping stations for e-scooters",
+    title: "A mulTi-noRmalization mUlti-distance aSsessmenT (TRUST) approach for locating a battery swapping station for electric scooters",
     authors: ["Ali Torkayesh", "Muhammet Deveci"],
     journal: "Sustainable Cities and Society",
     year: 2021,
@@ -187,7 +187,7 @@ export const publications: Publication[] = [
   },
   {
     id: "electric-bus-charging-type-interval-valued-neutrosophic-2021",
-    title: "Charging type selection for electric buses using interval-valued neutrosophic methods",
+    title: "Charging type selection for electric buses using interval-valued neutrosophic decision support model",
     authors: ["Muhammet Deveci", "Ali Torkayesh"],
     journal: "IEEE Transactions on Engineering Management",
     year: 2021,
@@ -197,7 +197,7 @@ export const publications: Publication[] = [
   },
   {
     id: "neutrosophic-mcda-critic-cocoso-supply-chain-2021",
-    title: "Neutrosophic MCDA with CRITIC-CoCoSo for supply chain decision-making",
+    title: "An interval valued neutrosophic decision-making structure for sustainable supplier selection",
     authors: ["Morteza Yazdani", "Ali Torkayesh", "Dragan Stević", "et al."],
     journal: "Expert Systems with Applications",
     year: 2021,
@@ -207,7 +207,7 @@ export const publications: Publication[] = [
   },
   {
     id: "social-sustainability-cocoso-2021",
-    title: "Social sustainability assessment using CoCoSo",
+    title: "Comparative assessment of social sustainability performance: Integrated data-driven weighting system and CoCoSo model",
     authors: ["Ali Torkayesh", "Fatih Ecer", "Dragan Pamucar", "Çiğdem Karamaşa"],
     journal: "Sustainable Cities and Society",
     year: 2021,
@@ -217,7 +217,7 @@ export const publications: Publication[] = [
   },
   {
     id: "landfill-location-bwm-grey-marcos-gis-2021",
-    title: "Landfill location selection using BWM-Grey MARCOS and GIS",
+    title: "Landfill location selection for healthcare waste of urban areas using hybrid BWM-grey MARCOS model based on GIS",
     authors: ["Ali Torkayesh", "Sarfaraz Hashemkhani Zolfani", "Mehdi Kahvand", "Parisa Khazaelpour"],
     journal: "Sustainable Cities and Society",
     year: 2021,
