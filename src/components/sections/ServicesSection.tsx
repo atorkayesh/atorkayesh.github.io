@@ -23,17 +23,9 @@ export function ServicesSection() {
               {primaryService.yearStart}&ndash;{primaryService.yearEnd}
             </div>
             <div className="min-w-0">
-              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                <h4 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
+              <h4 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
                   {primaryService.role}
                 </h4>
-                {primaryService.yearEnd === "Present" ? (
-                  <span className="inline-flex items-center gap-1.5 text-[0.6875rem] font-medium uppercase tracking-wide text-accent">
-                    <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
-                    Current
-                  </span>
-                ) : null}
-              </div>
               <p className="mt-1 text-[0.8125rem] leading-6 text-muted">
                 <span className="font-medium text-foreground/80">{primaryService.organization}</span>
               </p>
