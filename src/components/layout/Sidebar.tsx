@@ -36,6 +36,7 @@ const navGroups = [
       { href: "/#publications", id: "publications", label: "Publications" },
       { href: "/#grants", id: "grants", label: "Grants" },
       { href: "/#software", id: "software", label: "Software" },
+      { href: "/#datasets", id: "datasets", label: "Datasets" },
     ],
   },
   {
