@@ -4,7 +4,7 @@ export const person: Person = {
   name: "Ali Torkayesh",
   title: "Postdoctoral Researcher",
   avatar: "/images/profile.png",
-  cvPath: "/documents/Academic_CV-59.pdf",
+  cvPath: "/documents/CV_AT.pdf",
   affiliations: ["RWTH Aachen University", "Forschungszentrum Jülich"],
   department: "LuF Economics of Sustainability / ICE-JSA",
   location: "Aachen, Germany",
