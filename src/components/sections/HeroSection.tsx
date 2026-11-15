@@ -1,6 +1,7 @@
 "use client";
 
 import { BadgeCheck, Download, GraduationCap, Link, Mail } from "lucide-react";
+import { withBasePath } from "@/lib/utils";
 import { person } from "@/data/person";
 import { Button } from "@/components/ui/Button";
 import { PageWrapper } from "@/components/layout/PageWrapper";
@@ -60,7 +61,7 @@ export function HeroSection() {
             </Button>
             <a
               className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-border bg-background px-5 text-base font-medium text-foreground transition-colors hover:bg-foreground/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:w-auto"
-              href="/documents/ali-torkayesh-cv.pdf"
+              href={withBasePath(person.cvPath ?? "")}
               rel="noopener noreferrer"
               target="_blank"
             >

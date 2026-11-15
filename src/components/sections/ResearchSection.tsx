@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   BarChart3,
   GitBranch,
@@ -54,12 +55,12 @@ export function ResearchSection() {
         <SectionHeading subtitle="Six connected areas frame the research agenda.">
           Research
         </SectionHeading>
-        <a
+        <Link
           className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           href="/research"
         >
           Detailed research view
-        </a>
+        </Link>
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {researchAreas.map((area) => {

@@ -13,7 +13,7 @@ import {
   X,
 } from "lucide-react";
 import { person } from "@/data/person";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 const navGroups = [
   {
@@ -251,7 +251,7 @@ export function Sidebar() {
           <div className="border-t border-border/40 px-6 py-5">
             {person.cvPath && (
               <a
-                href={person.cvPath}
+                href={withBasePath(person.cvPath)}
                 rel="noopener noreferrer"
                 target="_blank"
                 onClick={() => setIsMenuOpen(false)}
@@ -368,7 +368,7 @@ export function Sidebar() {
         <div className="mt-10">
           {person.cvPath && (
             <a
-              href={person.cvPath}
+              href={withBasePath(person.cvPath)}
               rel="noopener noreferrer"
               target="_blank"
               className="mb-5 inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white shadow-sm transition-all hover:bg-accent/85 hover:shadow-md active:scale-[0.98]"

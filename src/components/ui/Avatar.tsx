@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 type AvatarProps = {
   alt?: string;
@@ -28,7 +28,7 @@ export function Avatar({ alt = "", className, initials, size = 64, width, height
           className="object-cover"
           fill
           sizes={`${w}px`}
-          src={src}
+          src={withBasePath(src)}
         />
       ) : (
         <span aria-hidden={alt ? "true" : undefined}>{initials}</span>

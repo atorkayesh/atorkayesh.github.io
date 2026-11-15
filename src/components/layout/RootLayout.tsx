@@ -1,6 +1,4 @@
 import type { ReactNode } from "react";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SkipToContent } from "@/components/ui/SkipToContent";
 import { Sidebar } from "./Sidebar";
 
@@ -21,8 +19,6 @@ export function RootLayout({ children }: RootLayoutProps) {
           {children}
         </main>
       </div>
-      <Analytics />
-      <SpeedInsights />
     </>
   );
 }
