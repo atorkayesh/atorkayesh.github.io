@@ -2,6 +2,17 @@ import type { Award } from "@/types/award";
 
 export const awards: Award[] = [
   {
+    title: "IDEA League Fellowship",
+    year: 2026,
+    description: "Research stays at TU Delft and Chalmers University of Technology",
+  },
+  {
+    title: "JARA-ENERGY PhD Student Award",
+    year: 2026,
+    awardedBy: "Jülich Aachen Research Alliance",
+    description: "For doctoral dissertation",
+  },
+  {
     title: "RWTH – Tsinghua University Senior Research Fellowship",
     year: 2026,
     description: "Research stay at Tsinghua University",
