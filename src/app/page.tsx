@@ -26,11 +26,11 @@ export default function Home() {
         <PositionsSection />
         <ExperiencesSection />
         <AwardsSection />
-        <SoftwareSection />
         <IndustrySection />
         {/* Research */}
         <PublicationsPreviewSection />
         <GrantsSection />
+        <SoftwareSection />
         {/* Activities */}
         <TeachingSection />
         <ConferencesSection />
