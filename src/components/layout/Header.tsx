@@ -64,7 +64,7 @@ export function Header() {
       <PageWrapper className="relative flex h-14 items-center justify-between">
         {/* Badge — left anchor */}
         <a
-          aria-label="Ali E. Torkayesh — back to top"
+          aria-label="Ali Torkayesh — back to top"
           className="group shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           href="#main-content"
         >

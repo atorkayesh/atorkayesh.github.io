@@ -9,7 +9,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Publications",
     description:
-      "Journal articles and conference papers by Ali E. Torkayesh on sustainable transport, renewable fuels, energy policy, and decision analytics.",
+      "Journal articles and conference papers by Ali Torkayesh on sustainable transport, renewable fuels, energy policy, and decision analytics.",
     alternates: {
       canonical: "/publications",
     },

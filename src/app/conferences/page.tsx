@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Conferences",
     description:
-      "Conference talks, posters, and proceedings presented by Ali E. Torkayesh on sustainable transport, renewable fuels, and energy policy.",
+      "Conference talks, posters, and proceedings presented by Ali Torkayesh on sustainable transport, renewable fuels, and energy policy.",
     alternates: {
       canonical: "/conferences",
     },

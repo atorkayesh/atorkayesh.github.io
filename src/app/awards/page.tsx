@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Honors & Awards",
     description:
-      "Honors, fellowships, scholarships, and presentation awards received by Ali E. Torkayesh in sustainable transport, renewable fuels, and energy policy research.",
+      "Honors, fellowships, scholarships, and presentation awards received by Ali Torkayesh in sustainable transport, renewable fuels, and energy policy research.",
     alternates: {
       canonical: "/awards",
     },

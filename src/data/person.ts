@@ -1,7 +1,7 @@
 import type { Person } from "@/types/person";
 
 export const person: Person = {
-  name: "Ali E. Torkayesh",
+  name: "Ali Torkayesh",
   title: "Postdoctoral Researcher",
   avatar: "/images/profile.png",
   cvPath: "/documents/Academic_CV-59.pdf",
@@ -26,7 +26,7 @@ export const person: Person = {
     "Energy Systems",
   ],
   bio:
-    "Ali E. Torkayesh is a postdoctoral researcher at RWTH Aachen University and Forschungszentrum Jülich, working at the intersection of sustainable transport, renewable fuels, energy policy, and decision analytics. His research examines how emerging fuel technologies such as Power-to-X, hydrogen, and sustainable aviation fuels can diffuse through markets and policy systems, combining quantitative modeling, expert-based evaluation, and behavioral perspectives to support climate-neutral transport transitions.",
+    "Ali Torkayesh is a postdoctoral researcher at RWTH Aachen University and Forschungszentrum Jülich, working at the intersection of sustainable transport, renewable fuels, energy policy, and decision analytics. His research examines how emerging fuel technologies such as Power-to-X, hydrogen, and sustainable aviation fuels can diffuse through markets and policy systems, combining quantitative modeling, expert-based evaluation, and behavioral perspectives to support climate-neutral transport transitions.",
   heroStats: {
     publications: 22,
     grants: 4,

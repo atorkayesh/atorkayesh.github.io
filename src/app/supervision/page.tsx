@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Student Supervision",
     description:
-      "Doctoral, master's, bachelor's, and internship students supervised by Ali E. Torkayesh at RWTH Aachen University.",
+      "Doctoral, master's, bachelor's, and internship students supervised by Ali Torkayesh at RWTH Aachen University.",
     alternates: {
       canonical: "/supervision",
     },

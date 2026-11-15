@@ -6,7 +6,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Contact",
     description:
-      "Contact Ali E. Torkayesh for academic collaborations, research inquiries, supervision, and sustainable transport policy projects.",
+      "Contact Ali Torkayesh for academic collaborations, research inquiries, supervision, and sustainable transport policy projects.",
     alternates: {
       canonical: "/contact",
     },

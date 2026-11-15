@@ -83,4 +83,4 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.example
 ## License
 
 All rights reserved. Scholarly content (publications, biography, CV, and related materials) belongs
-to Ali E. Torkayesh.
+to Ali Torkayesh.
