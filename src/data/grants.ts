@@ -40,7 +40,7 @@ export const grants: Grant[] = [
     yearEnd: 2025,
   },
   {
-    title: "Adaptive Conversion Systems for Renewable Energy and Carbon Sources",
+    title: "EXC: Adaptive Conversion Systems for Renewable Energy and Carbon Sources",
     institution: "Fuel Science Center",
     funder: "DFG",
     role: "Associate Researcher",
