@@ -29,7 +29,6 @@ const navGroups = [
       { href: "/#awards", id: "awards", label: "Honors & Awards" },
       { href: "/#software", id: "software", label: "Software" },
       { href: "/#industry", id: "industry", label: "Industry Experiences" },
-      { href: "/#skills", id: "skills", label: "Skills" },
       { href: "/#contact", id: "contact", label: "Contact" },
     ],
   },

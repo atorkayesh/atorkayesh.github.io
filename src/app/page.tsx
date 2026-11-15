@@ -9,7 +9,6 @@ import { IndustrySection } from "@/components/sections/IndustrySection";
 import { PositionsSection } from "@/components/sections/PositionsSection";
 import { PublicationsPreviewSection } from "@/components/sections/PublicationsPreviewSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { SkillsSection } from "@/components/sections/SkillsSection";
 import { SoftwareSection } from "@/components/sections/SoftwareSection";
 import { SupervisionSection } from "@/components/sections/SupervisionSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
@@ -30,7 +29,6 @@ export default function Home() {
         <AwardsSection />
         <SoftwareSection />
         <IndustrySection />
-        <SkillsSection />
         <ContactSection />
         {/* Research */}
         <PublicationsPreviewSection />
