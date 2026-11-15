@@ -34,7 +34,7 @@ export function AboutSection() {
             className="rounded-[0.6rem] text-2xl font-semibold"
             initials={initials}
             width={170}
-            height={230}
+            height={255}
             src={person.avatar}
           />
         </div>
