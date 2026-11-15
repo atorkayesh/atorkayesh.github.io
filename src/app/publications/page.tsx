@@ -26,7 +26,7 @@ export default function PublicationsPage() {
           Publications
         </SectionHeading>
         <a
-          href="https://scholar.google.com/citations?user=-eICcigAAAAJ&hl=en"
+          href="https://scholar.google.com/citations?hl=en&user=-eICcigAAAAJ&view_op=list_works&sortby=pubdate"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center gap-2 rounded-md border border-border px-4 py-2 text-[11px] font-bold uppercase tracking-[0.1em] text-muted transition-colors hover:border-foreground hover:text-foreground"

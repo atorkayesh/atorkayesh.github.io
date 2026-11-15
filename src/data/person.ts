@@ -12,7 +12,7 @@ export const person: Person = {
   email2: "atorkayesh@outlook.com",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/torkayesh/",
-    googleScholar: "https://scholar.google.com/citations?user=-eICcigAAAAJ&hl=en",
+    googleScholar: "https://scholar.google.com/citations?hl=en&user=-eICcigAAAAJ&view_op=list_works&sortby=pubdate",
     orcid: "https://orcid.org/0000-0002-1012-4213",
   },
   researchInterests: [
