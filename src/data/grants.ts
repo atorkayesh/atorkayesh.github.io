@@ -2,13 +2,14 @@ import type { Grant } from "@/types/grant";
 
 export const grants: Grant[] = [
   {
-    title: "Adaptive Conversion Systems for Sustainable Energy Carriers & Chemicals",
+    title: "EXC: Adaptive Conversion Systems for Sustainable Energy Carriers & Chemicals",
     institution: "Fuel and Chemical Science Center",
     funder: "DFG",
     role: "Associate Researcher",
     pi: "Prof. Dr. Sandra Venghaus",
     yearStart: 2026,
     yearEnd: 2032,
+    url: "https://www.fuelcenter.rwth-aachen.de/cms/~siul/fuelcenter/?lidx=1",
     topics: [
       "Policy analysis for energy carriers and chemicals",
       "Behavioral impacts on scale-up and market diffusion",
@@ -23,6 +24,7 @@ export const grants: Grant[] = [
     amount: "~€1,579,605",
     yearStart: 2025,
     yearEnd: 2028,
+    url: "https://h2-cluster.de/",
     topics: [
       "HyInnoSys2: Decentralized hydrogen economy in the Rhineland from a sustainability perspective",
     ],

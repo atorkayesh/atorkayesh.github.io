@@ -1,11 +1,11 @@
 import type { Grant } from "@/types/grant";
+import { ExternalLink as ExternalLinkIcon } from "lucide-react";
 
 type GrantEntryProps = {
   grant: Grant;
-  ongoing?: boolean;
 };
 
-export function GrantEntry({ grant, ongoing }: GrantEntryProps) {
+export function GrantEntry({ grant }: GrantEntryProps) {
   return (
     <article className="grid grid-cols-[4.5rem_1fr] gap-x-5 border-b border-border/40 py-5 last:border-0 sm:grid-cols-[6rem_1fr]">
       <div className="pt-0.5 font-mono text-xs leading-6 tabular-nums text-muted/80">
@@ -16,11 +16,16 @@ export function GrantEntry({ grant, ongoing }: GrantEntryProps) {
           <h3 className="text-[0.9375rem] font-semibold leading-6 text-foreground">
             {grant.title}
           </h3>
-          {ongoing ? (
-            <span className="inline-flex items-center gap-1.5 text-[0.6875rem] font-medium uppercase tracking-wide text-accent">
-              <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
-              Ongoing
-            </span>
+          {grant.url ? (
+            <a
+              className="inline-flex items-center gap-0.5 text-[0.6875rem] font-medium uppercase tracking-wide text-accent underline-offset-2 hover:underline"
+              href={grant.url}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Website
+              <ExternalLinkIcon aria-hidden="true" className="size-3" />
+            </a>
           ) : null}
         </div>
         <p className="mt-1 text-[0.8125rem] leading-6 text-muted">

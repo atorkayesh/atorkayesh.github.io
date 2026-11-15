@@ -2,12 +2,6 @@ import { grants } from "@/data/grants";
 import { GrantEntry } from "@/components/ui/GrantEntry";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-const currentYear = new Date().getFullYear();
-
-function isOngoingGrant(yearEnd?: number) {
-  return !yearEnd || yearEnd >= currentYear;
-}
-
 const sortedGrants = [...grants].sort((a, b) => b.yearStart - a.yearStart);
 
 export function GrantsSection() {
@@ -21,7 +15,6 @@ export function GrantsSection() {
           <GrantEntry
             grant={grant}
             key={`${grant.funder}-${grant.title}-${grant.yearStart}`}
-            ongoing={isOngoingGrant(grant.yearEnd)}
           />
         ))}
       </div>

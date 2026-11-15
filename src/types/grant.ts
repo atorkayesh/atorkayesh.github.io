@@ -8,4 +8,5 @@ export interface Grant {
   yearStart: number;
   yearEnd: number;
   topics?: string[];
+  url?: string;
 }
