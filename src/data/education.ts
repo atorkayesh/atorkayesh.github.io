@@ -2,8 +2,8 @@ import type { Education } from "@/types/education";
 
 export const education: Education[] = [
   {
-    degree: "Doctor of Philosophy (Ph.D.)",
-    field: "Management, Business and Economics",
+    degree: "Doctor of Philosophy (Dr. rer. pol.)",
+    field: "Economics and Social Sciences (Wirtschafts- und Sozialwissenschaften)",
     institution: "RWTH Aachen University",
     location: "Aachen, Germany",
     yearStart: 2021,
