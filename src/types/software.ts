@@ -3,4 +3,5 @@ export interface SoftwarePackage {
   language: string;
   description: string;
   githubUrl?: string;
+  articleUrl?: string;
 }

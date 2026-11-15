@@ -25,6 +25,17 @@ export function SoftwareEntry({ software }: SoftwareEntryProps) {
               <ExternalLinkIcon aria-hidden="true" className="size-3" />
             </a>
           ) : null}
+          {software.articleUrl ? (
+            <a
+              className="inline-flex items-center gap-0.5 text-[0.6875rem] font-medium uppercase tracking-wide text-accent underline-offset-2 hover:underline"
+              href={software.articleUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Software Article
+              <ExternalLinkIcon aria-hidden="true" className="size-3" />
+            </a>
+          ) : null}
         </div>
         <p className="mt-1 text-[0.8125rem] leading-6 text-muted">{software.description}</p>
       </div>
