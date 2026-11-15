@@ -3,7 +3,6 @@ import { ExternalLink as ExternalLinkIcon } from "lucide-react";
 
 type PublicationEntryProps = {
   highlightName?: string;
-  index: number;
   publication: Publication;
 };
 
@@ -12,14 +11,10 @@ function isHighlightedAuthor(author: string) {
 }
 
 export function PublicationEntry({
-  index,
   publication,
 }: PublicationEntryProps) {
   return (
-    <article className="relative pl-9 border-b border-border/40 pb-6 last:border-0 last:pb-0">
-      <span className="absolute left-0 top-0 text-xs font-mono text-muted/50 pt-px select-none">
-        {index}.
-      </span>
+    <article className="border-b border-border/40 pb-6 last:border-0 last:pb-0">
       <div>
         {/* Authors */}
         <p className="text-[0.8125rem] leading-6 text-muted">

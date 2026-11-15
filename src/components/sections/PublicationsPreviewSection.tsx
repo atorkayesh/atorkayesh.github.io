@@ -22,9 +22,8 @@ export function PublicationsPreviewSection() {
         </Link>
       </div>
       <div className="mt-8 space-y-6">
-        {previewPublications.map((publication, index) => (
+        {previewPublications.map((publication) => (
           <PublicationEntry
-            index={index + 1}
             key={publication.id}
             publication={publication}
           />

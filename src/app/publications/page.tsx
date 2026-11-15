@@ -36,9 +36,8 @@ export default function PublicationsPage() {
         </a>
       </div>
       <div className="mt-10 space-y-6">
-        {sortedPublications.map((publication, index) => (
+        {sortedPublications.map((publication) => (
           <PublicationEntry
-            index={index + 1}
             key={publication.id}
             publication={publication}
           />
