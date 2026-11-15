@@ -23,6 +23,14 @@ export default function Home() {
       <PageWrapper className="flex flex-col gap-28 px-0 sm:px-0 lg:px-0">
         {/* Profile */}
         <AboutSection />
+        {/* Background */}
+        <EducationSection />
+        <PositionsSection />
+        <ExperiencesSection />
+        <SoftwareSection />
+        <IndustrySection />
+        <SkillsSection />
+        <ContactSection />
         {/* Research */}
         <PublicationsPreviewSection />
         <GrantsSection />
@@ -32,14 +40,6 @@ export default function Home() {
         <ConferencesSection />
         <SupervisionSection />
         <ServicesSection />
-        {/* Background */}
-        <EducationSection />
-        <PositionsSection />
-        <ExperiencesSection />
-        <SoftwareSection />
-        <IndustrySection />
-        <SkillsSection />
-        <ContactSection />
       </PageWrapper>
     </>
   );
