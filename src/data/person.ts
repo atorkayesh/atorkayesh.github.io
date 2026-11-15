@@ -26,7 +26,7 @@ export const person: Person = {
     "Energy Systems",
   ],
   bio:
-    "Ali Torkayesh is a postdoctoral researcher at RWTH Aachen University and Forschungszentrum Jülich, working at the intersection of sustainable transport, renewable fuels, energy policy, and decision analytics. His research examines how emerging fuel technologies such as Power-to-X, hydrogen, and sustainable aviation fuels can diffuse through markets and policy systems, combining quantitative modeling, expert-based evaluation, and behavioral perspectives to support climate-neutral transport transitions.",
+    "I'm a postdoctoral researcher at RWTH Aachen University and Forschungszentrum Jülich. My work brings together policy analysis, computational political science, and market assessment, with a focus on energy and transport systems. I'm particularly interested in understanding how sustainable aviation can take off, and I'm beginning to explore maritime transport as well. To make sense of these complex transitions, I draw on agent-based modeling, operational research, decision analysis models, natural language processing, and large language models.",
   heroStats: {
     publications: 22,
     grants: 4,
