@@ -1,7 +1,6 @@
 import { AboutSection } from "@/components/sections/AboutSection";
 import { AwardsSection } from "@/components/sections/AwardsSection";
 import { ConferencesSection } from "@/components/sections/ConferencesSection";
-import { ContactSection } from "@/components/sections/ContactSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
 import { GrantsSection } from "@/components/sections/GrantsSection";
@@ -29,7 +28,6 @@ export default function Home() {
         <AwardsSection />
         <SoftwareSection />
         <IndustrySection />
-        <ContactSection />
         {/* Research */}
         <PublicationsPreviewSection />
         <GrantsSection />
