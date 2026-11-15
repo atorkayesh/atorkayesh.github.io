@@ -25,7 +25,7 @@ export function Avatar({ alt = "", className, initials, size = 64, width, height
       {src ? (
         <Image
           alt={alt}
-          className="object-cover"
+          className="object-contain"
           fill
           sizes={`${w}px`}
           src={withBasePath(src)}
