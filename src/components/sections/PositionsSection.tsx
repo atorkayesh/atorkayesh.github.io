@@ -6,7 +6,7 @@ export function PositionsSection() {
   return (
     <section className="scroll-mt-24" id="positions">
       <SectionHeading>
-        Positions
+        Academic Positions
       </SectionHeading>
       <div className="mt-8 grid grid-cols-[auto_1fr] gap-x-5">
         {positions.map((position) => {

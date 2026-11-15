@@ -24,7 +24,7 @@ const navGroups = [
     label: "Background",
     links: [
       { href: "/#education", id: "education", label: "Education" },
-      { href: "/#positions", id: "positions", label: "Positions" },
+      { href: "/#positions", id: "positions", label: "Academic Positions" },
       { href: "/#experiences", id: "experiences", label: "Experiences" },
       { href: "/#software", id: "software", label: "Software" },
       { href: "/#industry", id: "industry", label: "Industry Experiences" },
