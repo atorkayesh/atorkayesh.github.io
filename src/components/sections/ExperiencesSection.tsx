@@ -28,7 +28,7 @@ export function ExperiencesSection() {
               </p>
               {experience.subUnit ? (
                 <p className="mt-0.5 text-[0.8125rem] leading-6 text-muted">
-                  {experience.subUnitLabel ?? "Group"}: <span className="text-foreground/80">{experience.subUnit}</span>
+                  <span className="text-foreground/80">{experience.subUnit}</span>
                 </p>
               ) : null}
               {experience.details ? (
