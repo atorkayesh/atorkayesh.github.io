@@ -17,7 +17,8 @@ export function Avatar({ alt = "", className, initials, size = 64, width, height
   return (
     <span
       className={cn(
-        "relative inline-flex shrink-0 items-center justify-center overflow-hidden border border-border bg-foreground/10 font-medium text-foreground",
+        "relative inline-flex shrink-0 items-center justify-center overflow-hidden border border-border font-medium text-foreground",
+        !src && "bg-foreground/10",
         className,
       )}
       style={{ height: h, width: w }}
