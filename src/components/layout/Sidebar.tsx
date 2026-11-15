@@ -26,6 +26,7 @@ const navGroups = [
       { href: "/#education", id: "education", label: "Education" },
       { href: "/#positions", id: "positions", label: "Academic Positions" },
       { href: "/#experiences", id: "experiences", label: "Experiences" },
+      { href: "/#awards", id: "awards", label: "Honors & Awards" },
       { href: "/#software", id: "software", label: "Software" },
       { href: "/#industry", id: "industry", label: "Industry Experiences" },
       { href: "/#skills", id: "skills", label: "Skills" },
@@ -37,7 +38,6 @@ const navGroups = [
     links: [
       { href: "/#publications", id: "publications", label: "Publications" },
       { href: "/#grants", id: "grants", label: "Grants" },
-      { href: "/#awards", id: "awards", label: "Honors & Awards" },
     ],
   },
   {

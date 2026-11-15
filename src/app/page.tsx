@@ -27,6 +27,7 @@ export default function Home() {
         <EducationSection />
         <PositionsSection />
         <ExperiencesSection />
+        <AwardsSection />
         <SoftwareSection />
         <IndustrySection />
         <SkillsSection />
@@ -34,7 +35,6 @@ export default function Home() {
         {/* Research */}
         <PublicationsPreviewSection />
         <GrantsSection />
-        <AwardsSection />
         {/* Activities */}
         <TeachingSection />
         <ConferencesSection />
