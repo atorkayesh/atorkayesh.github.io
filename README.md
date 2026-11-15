@@ -1,13 +1,7 @@
-# Ali E. Torkayesh — Academic Portfolio
+# Ali Torkayesh — Portfolio
 
-A quiet, content-first personal website for **Dr. Ali E. Torkayesh**, postdoctoral researcher at
-**RWTH Aachen University** and **Forschungszentrum Jülich**, working at the intersection of
-sustainable transport, renewable fuels, Power-to-X policy analysis, energy-market dynamics, and
-multi-criteria decision making.
-
-The site presents publications, grants, awards, teaching, supervision, conferences, services, and
-software in a calm, academic register — designed to read like a scholarly profile rather than a
-marketing page, with first-class SEO and accessibility throughout.
+A quiet, content-first personal website for **Dr. Ali Torkayesh**, postdoctoral researcher at
+**RWTH Aachen University** and **Forschungszentrum Jülich**.
 
 ---
 
