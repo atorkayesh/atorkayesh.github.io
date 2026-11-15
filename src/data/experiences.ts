@@ -2,6 +2,13 @@ import type { AcademicExperience } from "@/types/experience";
 
 export const experiences: AcademicExperience[] = [
   {
+    title: "Visiting Senior Research Fellow",
+    institution: "Tsinghua University",
+    location: "Beijing, China",
+    period: "August 2026 – September 2026",
+    yearStart: 2026,
+  },
+  {
     title: "Visiting Researcher",
     institution: "TU Delft",
     subUnitLabel: "Faculty",
