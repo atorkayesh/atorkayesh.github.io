@@ -7,7 +7,8 @@ type PublicationEntryProps = {
 };
 
 function isHighlightedAuthor(author: string) {
-  return author.toLowerCase().includes("torkayesh");
+  const lower = author.toLowerCase();
+  return lower.includes("torkayesh") && !lower.includes("torkayesh, s");
 }
 
 export function PublicationEntry({
