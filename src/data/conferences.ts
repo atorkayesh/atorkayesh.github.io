@@ -2,7 +2,7 @@ import type { ConferencePresentation } from "@/types/conference";
 
 export const conferences: ConferencePresentation[] = [
   {
-    authors: ["Torkayesh, A.E.", "Ghorbani, A.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Ghorbani, A.", "Venghaus, S."],
     title: "Sustainable aviation fuels in the European Union: Addressing institutional misalignment across multi-level governance",
     conference: "World Interdisciplinary Network for Institutional Research (WINIR)",
     location: "Rome, Italy",
@@ -10,7 +10,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Gimpel, R.", "Torkayesh, A.E.", "Offermann, J.", "Engelmann, L.", "Venghaus, S.", "Ziefle, M.", "Arning, K."],
+    authors: ["Gimpel, R.", "Torkayesh, A.", "Offermann, J.", "Engelmann, L.", "Venghaus, S.", "Ziefle, M.", "Arning, K."],
     title: "Driving towards a sustainable Europe? Interdisciplinary perspectives on perceptions and acceptance of EU mobility policies",
     conference: "14th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
@@ -18,7 +18,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Azzaoui, M.", "Lubjuhn, S.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Azzaoui, M.", "Lubjuhn, S.", "Venghaus, S."],
     title: "Sustainable aviation fuel markets in the European Union: A cluster analysis",
     conference: "14th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
@@ -26,7 +26,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Gimpel, R.", "Torkayesh, A.E.", "Engelmann, L.", "Offermann, J.", "Venghaus, S.", "Ziefle, M.", "Arning, K."],
+    authors: ["Gimpel, R.", "Torkayesh, A.", "Engelmann, L.", "Offermann, J.", "Venghaus, S.", "Ziefle, M.", "Arning, K."],
     title: "Modelling policy acceptance with PLS-SEM: An investigation of key acceptance drivers of two EU mobility policies",
     conference: "14th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
@@ -34,7 +34,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Sota, R.", "Torkayesh, A.E.", "Venghaus, S."],
+    authors: ["Sota, R.", "Torkayesh, A.", "Venghaus, S."],
     title: "A Mapping of Sustainable Development Goal Interlinkages Centered Around Green Hydrogen",
     conference: "5th Aachen Hydrogen Colloquium",
     location: "Aachen, Germany",
@@ -42,7 +42,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Paterson, V.", "Siekmann, F.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Paterson, V.", "Siekmann, F.", "Venghaus, S."],
     title: "Language models in sustainability governance: An AI-driven policy monitoring framework for hydrogen",
     conference: "Joint Sessions of Workshops – From Code to Conversation: What LLMs Mean for Political Science",
     location: "Innsbruck, Austria",
@@ -50,7 +50,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Sota, R.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Sota, R.", "Venghaus, S."],
     title: "Power-to-X governance in Germany: A perceived policy coherence analysis",
     conference: "European Hydrogen Energy Conference (EHEC)",
     location: "Seville, Spain",
@@ -58,7 +58,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Knecht, C.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Knecht, C.", "Venghaus, S."],
     title: "The German Bundestag and the politics of sustainable fuels: A discourse network analysis",
     conference: "Hydrogen Futures: Inspiring Researchers and Innovators in Clean Energy",
     location: "Bonn, Germany",
@@ -66,7 +66,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Farajiamiri, M.", "Walther, G.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Farajiamiri, M.", "Walther, G.", "Venghaus, S."],
     title: "Impacts of incentives on development of power-to-liquid fuels in Europe",
     conference: "34th European Conference on Operational Research (EURO 2025)",
     location: "Leeds, United Kingdom",
@@ -74,7 +74,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Venghaus, S."],
     title: "Policy analysis for Power-to-X fuels in Germany using a semi-quantitative network analysis: A focus on perceived policy coherence",
     conference: "EPHyC2025: European PhD Hydrogen Conference",
     location: "Trieste, Italy",
@@ -82,7 +82,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Venghaus, S.", "Lubjuhn, S.", "Siekmann, F.", "Sota, R.", "Torkayesh, A.E.", "Stark, S."],
+    authors: ["Venghaus, S.", "Lubjuhn, S.", "Siekmann, F.", "Sota, R.", "Torkayesh, A.", "Stark, S."],
     title: "Proactive policy advice – The potential of machine learning for predictive policy scenario generation",
     conference: "Applied Energy Symposium: MIT A+B",
     location: "Cambridge, United States",
@@ -90,7 +90,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Hendiani, S.", "Walther, G.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Hendiani, S.", "Walther, G.", "Venghaus, S."],
     title: "Renewable fuels in transport: An analysis of market development barriers",
     conference: "33rd European Conference on Operational Research (EURO 2024)",
     location: "Copenhagen, Denmark",
@@ -98,7 +98,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Venghaus, S.", "Rohner, J.J.", "Torkayesh, A.E."],
+    authors: ["Venghaus, S.", "Rohner, J.J.", "Torkayesh, A."],
     title: "Toward climate-neutral aviation – The market adoption of sustainable aviation fuels using agent-based modeling",
     conference: "33rd European Conference on Operational Research (EURO 2024)",
     location: "Copenhagen, Denmark",
@@ -106,7 +106,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Vatankhah Ghadim, H.", "Torkayesh, A.E.", "Haas, J.", "Peer, R.", "Walther, G.", "Venghaus, S."],
+    authors: ["Vatankhah Ghadim, H.", "Torkayesh, A.", "Haas, J.", "Peer, R.", "Walther, G.", "Venghaus, S."],
     title: "Green skies ahead: Streamlining the sustainable aviation fuel supply chain in New Zealand",
     conference: "33rd European Conference on Operational Research (EURO 2024)",
     location: "Copenhagen, Denmark",
@@ -114,7 +114,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Hendiani, S.", "Walther, G.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Hendiani, S.", "Walther, G.", "Venghaus, S."],
     title: "Renewable fuels for freight transport: Sustainability principles & market barriers",
     conference: "12th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
@@ -122,7 +122,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Venghaus, S."],
     title: "Towards climate neutrality in Germany: A multi-objective policy optimization for renewable fuels in the transport sector",
     conference: "23rd Conference of the International Federation of Operational Research Societies (IFORS 2023)",
     location: "Santiago, Chile",
@@ -130,7 +130,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Venghaus, S."],
     title: "Cross-sectoral policy coherence and its impact on climate neutrality in the German transport sector",
     conference: "11th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
@@ -138,7 +138,7 @@ export const conferences: ConferencePresentation[] = [
     type: "oral",
   },
   {
-    authors: ["Torkayesh, A.E.", "Venghaus, S."],
+    authors: ["Torkayesh, A.", "Venghaus, S."],
     title: "Market diffusion of bio-hybrid fuels in the mobility sector of Germany: A fuzzy cognitive mapping approach",
     conference: "10th International Conference \"Fuel Science: From Production to Propulsion\"",
     location: "Aachen, Germany",
