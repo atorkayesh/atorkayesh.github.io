@@ -11,7 +11,6 @@ export const experiences: AcademicExperience[] = [
   {
     title: "Visiting Researcher",
     institution: "TU Delft",
-    subUnitLabel: "Faculty",
     subUnit: "Faculty of Technology, Policy and Management",
     location: "Delft, The Netherlands",
     period: "October 2025 – May 2026",
@@ -28,7 +27,6 @@ export const experiences: AcademicExperience[] = [
   {
     title: "Visiting Research Fellow",
     institution: "University of Canterbury",
-    subUnitLabel: "Research Group",
     subUnit: "Sustainable Energy Research Group (SERG)",
     location: "Christchurch, New Zealand",
     period: "February 2024 – April 2024",
