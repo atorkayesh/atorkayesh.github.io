@@ -51,7 +51,7 @@ export function SupervisionSection() {
           className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           href="/supervision"
         >
-          View All Student Supervision <span aria-hidden="true">→</span>
+          View all <span aria-hidden="true">→</span>
         </Link>
       </div>
       <div className="mt-8 space-y-10">
